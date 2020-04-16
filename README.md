@@ -1,6 +1,12 @@
 # Official Documentation for the ZixiPay Wallet APIs.
-* Official Announcements regarding changes, downtime, etc. to the APIs will be reported on here as well as: **https://t.me/zixipay**
-* Endpoints, parameters, payloads, etc. described in the documents in this repository are considered **official** and **supported**.
+
+ZixiPay Wallet is one the most secure and easy to use wallet platforms supporting Bitcoin, Ethereum, Litecoin and Tether both on OMNI and ERC20.
+
+ZixiPay Wallet services is available via web, mobile app (Android and iOS) and REST API.
+
+ZixiPay Wallet APIs has been designed to be highly secure and easy to integrate with any kind of platfroms for automatic or mass transfers of the supported cryptocurrencies (BTC, ETH, LTC and USDT).
+
+Official Announcements regarding changes, downtime, etc. to the APIs will be posted on: **https://t.me/zixipay** and **https://twitter.com/zixipay**.
 
 
 Name | Description
