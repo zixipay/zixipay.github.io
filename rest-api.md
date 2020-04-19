@@ -146,6 +146,7 @@ POST /apiv2/getbalances
 Get all wallet balances.
 
 **Parameters:**
+
 Name | Type | Mandatory | Description
 ------------ | ------------ | ------------ | ------------
 uid | string | YES |User ID
@@ -197,6 +198,7 @@ POST /apiv2/getwallet
 Get wallet address
 
 **Parameters:**
+
 Name | Type | Mandatory | Description
 ------------ | ------------ | ------------ | ------------
 currency | string | YES |Any of the supported currencies (USDZ, EURZ, LTC, BTC, ETH or USDT)
