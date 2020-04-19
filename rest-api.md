@@ -147,6 +147,7 @@ Get all wallet balances.
 
 **Parameters:**
 
+
 Name | Type | Mandatory | Description
 ------------ | ------------ | ------------ | ------------
 uid | string | YES |User ID
