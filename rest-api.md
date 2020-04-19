@@ -200,6 +200,7 @@ Get wallet address
 
 **Parameters:**
 
+
 Name | Type | Mandatory | Description
 ------------ | ------------ | ------------ | ------------
 currency | string | YES |Any of the supported currencies (USDZ, EURZ, LTC, BTC, ETH or USDT)
@@ -234,6 +235,8 @@ POST /apiv2/getrates
 Get live exchange rates
 
 **Parameters:**
+
+
 Name | Type | Mandatory | Description
 ------------ | ------------ | ------------ | ------------
 uid | string | YES |User ID
@@ -287,6 +290,8 @@ POST /apiv2/statement
 Get transaction(s) history with optional filters. Maximum number of transactions returned is 100.
 
 **Parameters:**
+
+
 Name | Type | Mandatory | Description
 ------------ | ------------ | ------------ | ------------
 txid | string | NO |ZixiPay transaction ID
@@ -332,6 +337,8 @@ POST /apiv2/withdraw
 Withdraw any of the supported cryptocurrencies
 
 **Parameters:**
+
+
 Name | Type | Mandatory | Description
 ------------ | ------------ | ------------ | ------------
 amount | number | YES | amount to be withdrawn
@@ -366,6 +373,8 @@ POST /apiv2/transfer
 Internal transfer any of the supported cryptocurrencies
 
 **Parameters:**
+
+
 Name | Type | Mandatory | Description
 ------------ | ------------ | ------------ | ------------
 amount | number | YES | amount to be transferred
