@@ -14,5 +14,4 @@ Official Announcements regarding changes, downtime, etc. to the APIs will be pos
 Name | Description
 ------------ | ------------
 [rest-api.md](./rest-api.md) | Details on the REST API
-[errors.md](./errors.md) | Descriptions of possible error messages from the REST API
 [merchant-integration.md](./merchant.md) | Details on shopping cart integration
