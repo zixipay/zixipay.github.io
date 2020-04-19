@@ -47,7 +47,7 @@
 * Any endpoint can return an error.
 * When an endpoint returns an error, the `result` will be NULL and the `payload` will contain the reason.
 
-**Sample Error Response:**
+**Error Response:**
 ```javascript
 {
   "result":"",
