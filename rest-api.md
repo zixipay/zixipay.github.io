@@ -1,4 +1,4 @@
-**Table of Contents**
+# ZixiPay REST API Version 2
 
 - [ZixiPay REST API Version 2](#zixipay-rest-api-version-2)
   - [General API Information](#general-api-information)
@@ -24,7 +24,6 @@
       - [withdraw](#withdraw)
       - [transfer](#transfer)
 
-# ZixiPay REST API Version 2
 ## General API Information
 * The base endpoint url is: **https://api.zixipay.com**
 * All endpoints return a JSON object.
