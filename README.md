@@ -6,7 +6,7 @@ Bitcoin Wallet API, Ethereum Wallet API, Litecoin Wallet API, Tether Wallet API.
 
 ZixiPay Wallet services is available via [Web](https://zixipay.com/), Mobile App ([Android](https://play.google.com/store/apps/details?id=com.zixipay.wallet) and [iOS](https://apps.apple.com/us/app/zixipay-btc-eth-ltc-usdt/id1492139262)) and REST API.
 
-ZixiPay Wallet APIs has been designed to be highly secure and easy to integrate with any kind of platfroms for automatic or mass transfers of the supported cryptocurrencies (BTC, ETH, LTC and USDT).
+ZixiPay Wallet APIs has been designed to be highly secure and easy to integrate with any kind of platforms for automatic or mass transfers of the supported cryptocurrencies (BTC, ETH, LTC and USDT).
 
 Official Announcements regarding changes, downtime, etc. to the APIs will be posted on: **https://t.me/zixipay** and **https://twitter.com/zixipay**.
 
