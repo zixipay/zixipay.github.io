@@ -1,6 +1,4 @@
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+**Table of Contents**
 
 - [ZixiPay REST API Version 2](#zixipay-rest-api-version-2)
   - [General API Information](#general-api-information)
@@ -25,8 +23,6 @@
     - [Transactional Endpoints](#transactional-endpoints)
       - [withdraw](#withdraw)
       - [transfer](#transfer)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 # ZixiPay REST API Version 2
 ## General API Information
