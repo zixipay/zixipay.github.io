@@ -73,15 +73,13 @@
 * The `sig` is **not case sensitive** but needs to be sent in lower case.
 ### Endpoint Call Examples for `getwallet`
 
-Key | Value
------------- | ------------
-User ID | kkdyrcuxj9jvc6f76fgw
-API Key | Dq7MRukyFMxvs33944gsrsBGLLThVUQPqcScMJGv
-
-
 Parameter | Value
 ------------ | ------------
 currency | BTC
+User ID | kkdyrcuxj9jvc6f76fgw
+API Key | Dq7MRukyFMxvs33944gsrsBGLLThVUQPqcScMJGv
+Timestamp|1587228352
+
 
 #### Unix Shell
 Example of sending a valid signed payload from the
