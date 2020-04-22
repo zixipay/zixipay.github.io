@@ -354,7 +354,7 @@ sig | string | YES |HMAC-SHA256 signature
       "currency":"USDT",            // currency
       "status":"pending",           // status
       "txid":"TW6596823102569846",  // ZixiPay transaction ID
-      "minimum":"USDT",
+      "minimum":"2.00",             // minimum amount
     }
   ]
 }
