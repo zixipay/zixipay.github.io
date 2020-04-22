@@ -1,6 +1,6 @@
-# ZixiPay REST API Version 2
+# ZixiPay API Version 2
 
-- [ZixiPay REST API Version 2](#zixipay-rest-api-version-2)
+- [ZixiPay API Version 2](#zixipay-api-version-2)
   - [General API Information](#general-api-information)
   - [HTTP Return Codes](#http-return-codes)
   - [Error Response](#error-response)
