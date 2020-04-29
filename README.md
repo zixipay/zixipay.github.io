@@ -15,5 +15,5 @@ Questions on API endpoints? Send an email to apisupport@zixipay.com
 Name | Description
 ------------ | ------------
 [api-preparation.md](./api-preparation.md) | Preparation steps before using ZixiPay API
-[rest-api.md](./rest-api.md) | Details on the REST API
+[rest-api.md](./rest-api.md) | Details on ZixiPay API
 [merchant-integration.md](./merchant.md) | Details on shopping cart integration
