@@ -10,8 +10,10 @@ ZixiPay Wallet APIs has been designed to be highly secure and easy to integrate 
 
 Official Announcements regarding changes, downtime, etc. to the APIs will be posted on: **https://t.me/zixipay** and **https://twitter.com/zixipay**.
 
+Questions on API endpoints? Send an email to apisupport@zixipay.com
 
 Name | Description
 ------------ | ------------
+[api-preparation.md](./api-preparation.md) | Preparation steps before using ZixiPay API
 [rest-api.md](./rest-api.md) | Details on the REST API
 [merchant-integration.md](./merchant.md) | Details on shopping cart integration
