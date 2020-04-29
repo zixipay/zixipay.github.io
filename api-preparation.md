@@ -1,6 +1,6 @@
 # Activation of ZixiPay Wallet API
 
-In order to activate ZixiPay API, 3 things needs to be done. Finding the ```User ID```, setting the ```API Access Authorized IP``` and generating the ```API Key```.
+In order to activate ZixiPay API, three things needs to be done. Finding the ```User ID```, setting the ```API Access Authorized IP``` and generating the ```API Key```.
 Here is how it is done:
 
 * Login to your ZixiPay Wallet at https://zixipay.com/login
