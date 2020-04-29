@@ -3,7 +3,7 @@
 In order to activate ZixiPay API, three things needs to be done. Finding the ```User ID```, setting the ```API Access Authorized IP``` and generating the ```API Key```.
 Here is how it is done:
 
-* Login to your ZixiPay Wallet at https://zixipay.com/login
+* Login to your ZixiPay Wallet at [https://zixipay.com/login](https://zixipay.com/login)
 * Go to the ```Settings``` menu.
 * Find your ```User ID``` right below the balances, User ID is mandatory in all endpoints calls as ```uid``` parameter.
 * Set ```API Access Authorized IP``` and save the Settings. This is the IP address from which your API calls are going to be made. This is a mandatory setting and all endpoint calls will be rejected if no Authorized IP is set.
