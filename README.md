@@ -16,4 +16,4 @@ Name | Description
 ------------ | ------------
 [api-preparation.md](./api-preparation.md) | Preparation steps before using ZixiPay API
 [rest-api.md](./rest-api.md) | Details on ZixiPay API
-[merchant-integration.md](./merchant.md) | Details on shopping cart integration
+[merchant-integration.md](./merchant.md) | Details on to accept crypto payment
