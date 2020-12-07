@@ -6,6 +6,7 @@
   - [API Endpoints](#api-endpoints)
     - [Merchant API Endpoints](#merchant-api-endpoints)
       - [getpaymentwallet](#getpaymentwallet)
+    - [IPN Callback Parameters](#ipn-callback-parameters)
 
 ## Merchant integrationa and payment acceptance
 * All [General API Information](./rest-api.md#general-api-information) are valid and applies.
@@ -13,6 +14,7 @@
 
 ## Merchant Set Up
 
+Setup guided to be posted here.
 
 ## API Endpoints
 ### Merchant API Endpoints
@@ -53,3 +55,4 @@ sig | string | YES |HMAC-SHA256 signature
   ]
 }
 ```
+### IPN Callback Parameters
