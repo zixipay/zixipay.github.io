@@ -5,11 +5,11 @@
   - [Merchant Set Up](#merchant-set-up)  
   - [API Endpoints](#api-endpoints)
     - [Merchant API Endpoints](#merchant-api-endpoints)
-      - [getwallet](#getwallet)
+      - [getpaymentwallet](#getpaymentwallet)
 
 ## Merchant integrationa and payment acceptance
-* All General API Information(./rest-api.md#general-api-information) are valid and applies.
-* All the merchant API endpoints are accessible only if the wallet acount is verified and the Merchant setting are set and active.
+* All [General API Information](./rest-api.md#general-api-information) are valid and applies.
+* All the merchant API endpoints are accessible only if the [ZixiPay](https://zixipay.com) wallet acount is verified and the Merchant setting are set and active.
 
 ## Merchant Set Up
 
