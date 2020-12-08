@@ -20,8 +20,8 @@ Here are the steps for set up and activation of the ZixiPay Merchant API:
 * Go to the ```Merchants``` menu. If your wallet account is not verified, you willl be asked to verify your account.
 * ```Website URL``` is the website the payment acceptance service is required for.
 * ```Category``` is the most relevant business category the website fits into.
-* ```IPN Callback URL``` need to be set only if an callback payment notification is required to be called for each payment. If left empty, no callback be done. 
-* ```IPN callback hash key``` is the key to be used to sign the callback call with ```HMAC-SHA256``` signatures. If left empty, callback will not be signed.
+* ```IPN Callback URL``` needs to be set only if a callback payment notification is required to be called for each payment. If left empty, no callback will be done. 
+* ```IPN callback hash key``` is the key to be used to sign the payment callback with ```HMAC-SHA256``` signatures. If left empty, callback will not be signed.
 * ```Automatic exchange to USDZ``` if enabled, all incoming payments in other currencies will be automatically exchanged to and deposited in USDZ wallet.
 
 
