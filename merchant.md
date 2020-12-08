@@ -9,7 +9,7 @@
     - [IPN Callback Parameters](#ipn-callback-parameters)
 
 ## Merchant integrationa and payment acceptance
-* All [General API Information](./rest-api.md#general-api-information) are valid and applies.
+* All [General API Information](./rest-api.md#general-api-information), [Endpoints Limit](./rest-api.md#endpoints-limit) and [Endpoints security](./rest-api.md#endpoints-security) are valid and applies.
 * All the merchant API endpoints are accessible only if the [ZixiPay](https://zixipay.com) wallet acount is verified and the [Merchant Setting](#merchant-settings) are set and active.
 
 ## Merchant Settings
@@ -21,7 +21,7 @@ Here are the steps for set up and activation of the ZixiPay Merchant API:
 * ```Website URL``` is the website the payment acceptance service is required for.
 * ```Category``` is the most relevant business category the website fits into.
 * ```IPN Callback URL``` needs to be set only if a callback payment notification is required to be called for each payment. If left empty, no callback will be done. 
-* ```IPN callback hash key``` is the key to be used to sign the payment callback with ```HMAC-SHA256``` signatures. If left empty, callback will not be signed.
+* ```IPN callback hash key``` is the key to be used to sign the payment callback with ```HMAC-SHA256```. If left empty, callback will not be signed.
 * ```Automatic exchange to USDZ``` if enabled, all incoming payments in other currencies will be automatically exchanged to and deposited in USDZ wallet.
 
 
