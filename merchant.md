@@ -2,7 +2,7 @@
 
 - [Merchant integrationa and payment acceptance](#payment-acceptance)
   - [General API Information](./rest-api.md#general-api-information)
-  - [Merchant Set Up](#merchant-set-up)  
+  - [Merchant Settings](#merchant-settings)  
   - [API Endpoints](#api-endpoints)
     - [Merchant API Endpoints](#merchant-api-endpoints)
       - [getpaymentwallet](#getpaymentwallet)
@@ -12,9 +12,18 @@
 * All [General API Information](./rest-api.md#general-api-information) are valid and applies.
 * All the merchant API endpoints are accessible only if the [ZixiPay](https://zixipay.com) wallet acount is verified and the Merchant setting are set and active.
 
-## Merchant Set Up
+## Merchant Settings
 
-Setup guided to be posted here.
+Here are the steps for set up and activation of the ZixiPay Merchant API: 
+
+* Login to your ZixiPay Wallet at [https://zixipay.com/login](https://zixipay.com/login)
+* Go to the ```Merchants``` menu. If your wallet account is not verified, you willl be asked to verify your account.
+* ```Website URL``` is the payment acceptance is going to be done.
+* ```Category``` is the most relevant business category the website fits into.
+* ```IPN Callback URL``` need to be set only if an callback payment notification is required to be called for each payment. If left empty, no callback be done. 
+* ```IPN callback hash key``` is the key to be used to sign the callback call with ```HMAC-SHA256``` signatures. If left empty, callback will not be signed.
+* ```Automatic exchange to USDZ``` if enabled, all incoming payments in other currencies will be automatically exchanged to and deposited in USDZ wallet.
+
 
 ## API Endpoints
 ### Merchant API Endpoints
