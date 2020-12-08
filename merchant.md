@@ -39,7 +39,7 @@ Get payment wallet address
 Name | Type | Mandatory | Description
 ------------ | ------------ | ------------ | ------------
 currency | string | YES |Any of the supported currencies (USDZ, EURZ, LTC, BTC, ETH or USDT)
-ref | string | NO |Reference code to this payment wallet
+ref | string | NO |Reference tag to this payment wallet
 uid | string | YES |User ID
 ts | number | YES |Unix time
 sig | string | YES |HMAC-SHA256 signature
