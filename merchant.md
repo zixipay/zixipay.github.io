@@ -1,6 +1,6 @@
 # ZixiPay API Version 2
 
-- [Merchant integrationa and payment acceptance](#payment-acceptance)
+- [Merchant Integration and Payment Acceptance](#payment-acceptance)
   - [General API Information](./rest-api.md#general-api-information)
   - [Merchant Settings](#merchant-settings)  
   - [API Endpoints](#api-endpoints)
