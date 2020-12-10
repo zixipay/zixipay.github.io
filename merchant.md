@@ -72,9 +72,9 @@ If the IPN Callback URL is set in the Merchant settings, an HTTP POST request wi
 
 Name | Type | Description
 ------------ | ------------ | ------------
-ref | string |Reference tag to this payment wallet (will be empty if no ref has been requested at the time of generation
+ref | string |Reference tag to this payment wallet (will be null if no ref has been requested at the time of generation
 amount|number| amount of the incoming payment
-fee|number|the fee that has been charged for auto-exhange, callback or both
+fee|number|the fee that has been charged for auto-exhange, callback, both or will be zero if no fees has been charged
 currency | string | Any of the supported currencies (USDZ, EURZ, LTC, BTC, ETH or USDT)
 uid | string | User ID
 ts | number | Unix time
