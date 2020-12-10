@@ -8,7 +8,7 @@ ZixiPay Wallet services is available on [Web](https://zixipay.com/), Mobile App 
 
 ZixiPay Wallet APIs has been designed to be highly secure and easy to integrate with any kind of platforms for automatic or mass transfers of the supported cryptocurrencies (BTC, ETH, LTC and USDT).
 
-Official Announcements regarding changes, downtime, etc. to the APIs will be posted on: [Twitter](https://t.me/zixipay) and [Telegram](https://twitter.com/zixipay).
+Official Announcements regarding changes, downtime, etc. to the APIs will be posted on: [Twitter](https://twitter.com/zixipay) and [Telegram](https://t.me/zixipay).
 
 Any questions about the API endpoints? Send an email to apisupport@zixipay.com
 
