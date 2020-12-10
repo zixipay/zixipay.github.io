@@ -54,7 +54,7 @@ function ZixiPay_ApiCall($endpoint, $params, $apikey) {
 
 	curl_close($ch);
 
-  if (!$result)
+	if (!$result)
 		return false;
 
 	return json_decode($result, true);
