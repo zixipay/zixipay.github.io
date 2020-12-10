@@ -45,8 +45,8 @@ function ZixiPay_ApiCall($endpoint, $params, $apikey) {
 		CURLOPT_POST			=> true,
 		CURLOPT_HEADER			=> false,
 		CURLOPT_ENCODING		=> 'gzip',
-		CURLOPT_RETURNTRANSFER	=> true,
-		CURLOPT_URL				=> $apiurl . $endpoint,
+		CURLOPT_RETURNTRANSFER		=> true,
+		CURLOPT_URL			=> $apiurl . $endpoint,
 		CURLOPT_POSTFIELDS		=> $params
 	));
 
