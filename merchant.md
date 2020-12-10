@@ -78,4 +78,4 @@ fee|number|the fee that has been charged for auto-exhange, callback, both or wil
 currency | string | Any of the supported currencies (USDZ, EURZ, LTC, BTC, ETH or USDT)
 uid | string | User ID
 ts | number | Unix time
-sig | string | HMAC-SHA256 signature (will be null if hash signature has not been enabled)
+sig | string | HMAC-SHA256 signature (will be null if hash signature has not been set in the Merchant settings)
