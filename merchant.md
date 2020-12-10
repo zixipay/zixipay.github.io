@@ -14,7 +14,7 @@
 
 ## Merchant Settings
 
-Here are the steps for set up and activation of the ZixiPay Merchant API: 
+How to set up and activate the ZixiPay Merchant API: 
 
 * Login to your ZixiPay Wallet at [https://zixipay.com/login](https://zixipay.com/login)
 * Go to the ```Merchants``` menu. If your wallet account is not verified, you willl be asked to verify your account.
