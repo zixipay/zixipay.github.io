@@ -39,7 +39,7 @@ Get payment wallet address
 Name | Type | Mandatory | Description
 ------------ | ------------ | ------------ | ------------
 currency | string | YES |Any of the supported currencies (USDZ, EURZ, LTC, BTC, ETH or USDT)
-ref | string | NO |A reference tag to this payment wallet (depeneding on the usage this could be an invoice number, user id or any other unique reference to be used in callback)
+ref | string | YES |A reference tag to this payment wallet (depeneding on the usage this could be an invoice number, etc)
 uid | string | YES |User ID
 ts | number | YES |Unix time
 sig | string | YES |HMAC-SHA256 signature
@@ -66,6 +66,9 @@ sig | string | YES |HMAC-SHA256 signature
   ]
 }
 ```
+**mportant:** Multiple calls to this endpoint with the same ```ref``` tag would return the same payment wallet address.
+
+
 ### IPN Callback Parameters
 If the IPN Callback URL is set in the Merchant settings, an HTTP POST request will be made to the defined URL with the following parameteres:
 
@@ -74,7 +77,7 @@ If the IPN Callback URL is set in the Merchant settings, an HTTP POST request wi
 
 Name | Type | Description
 ------------ | ------------ | ------------
-ref | string |Reference tag to this payment wallet (will be null if no ref has been set at the time of payment wallet creation)
+ref | string |Reference tag to this payment wallet
 amount|number| amount of the incoming payment
 fee|number|the fee that has been charged for auto-exhange, callback, both or will be zero if no fees has been charged
 currency | string | Any of the supported currencies (USDZ, EURZ, LTC, BTC, ETH or USDT)
