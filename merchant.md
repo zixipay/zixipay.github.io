@@ -66,7 +66,8 @@ sig | string | YES |HMAC-SHA256 signature
   ]
 }
 ```
-**mportant:** Multiple calls to this endpoint with the same ```ref``` tag would return the same payment wallet address.
+**Important:** Calls to this endpoint with the same ```ref``` tag would return the same payment wallet address.
+
 
 
 ### IPN Callback Parameters
