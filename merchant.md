@@ -66,7 +66,7 @@ sig | string | YES |HMAC-SHA256 signature
   ]
 }
 ```
-**Important:** Calls to this endpoint with the same ```ref``` tag would return the same payment wallet address.
+**IMPORTANT:** Calls to this endpoint with the same ```ref``` tag would return the same payment wallet address.
 
 
 
