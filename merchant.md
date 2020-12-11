@@ -39,7 +39,7 @@ Get payment wallet address
 Name | Type | Mandatory | Description
 ------------ | ------------ | ------------ | ------------
 currency | string | YES |Any of the supported currencies (USDZ, EURZ, LTC, BTC, ETH or USDT)
-ref | string | YES |A reference tag to this payment wallet (depeneding on the usage this could be an invoice number, userid, username or any other references in the caller's platform)
+ref | string | YES |A reference tag to this payment wallet (depeneding on the usage this could be an invoice number, userid, username or any other kind of references in your platform)
 uid | string | YES |ZixiPay User ID
 ts | number | YES |Unix time
 sig | string | YES |HMAC-SHA256 signature
