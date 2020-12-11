@@ -82,6 +82,7 @@ ref | string |Reference tag to this payment wallet
 amount|number| amount of the incoming payment
 fee|number|the fee that has been charged for auto-exhange, callback, both or will be zero if no fees has been charged
 currency | string | Any of the supported currencies (USDZ, EURZ, LTC, BTC, ETH or USDT)
-txid | string | ZixiPay transaction id
+txid | string | blockchain transaction id
+zxid | string | ZixiPay transaction id
 ts | number | Unix time
 sig | string | HMAC-SHA256 signature (will be null if hash signature has not been set in the Merchant settings)
