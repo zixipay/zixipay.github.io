@@ -32,7 +32,7 @@
   `application/x-www-form-urlencoded`.
 * Parameters may be sent in any order.
 * `gzip` is enabled on all endpoints and is recommended to be used on the client side.
-* All endpoints are authenticated and require 3 mandatory parameters (`uid`, `ts` and `sig`). Details in the [Endpoint security](#Endpoints-security) section.
+* All endpoints are authenticated and require 3 mandatory parameters (`uid`, `ts` and `sig`). Details in the [Endpoint security](#endpoints-security) section.
 * Data is returned in **descending** order. Newest first, oldest last.
 ## HTTP Return Codes
 * HTTP `200` API call was correct.
