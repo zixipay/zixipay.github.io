@@ -17,6 +17,6 @@ Name | Description
 [api-preparation.md](./api-preparation.md) | Preparation steps before using ZixiPay API
 [rest-api.md](./rest-api.md) | Details on ZixiPay API
 [merchant-integration.md](./merchant.md) | Details on how to accept crypto payment
-[ZixiPay API sample](./samples/zixipay-api.php)|PHP sample code
-[ZixiPay merchant API sample](./samples/zixipay-merchant-api.php)|PHP sample code
+[zixipay-api.php](./samples/zixipay-api.php)|ZixiPay API PHP sample code
+[zixipay-merchant-api.php](./samples/zixipay-merchant-api.php)|ZixiPay Merchant API PHP sample code
 
