@@ -1,4 +1,4 @@
-# ZixiPay API Version 2
+# ZixiPay Merchant API Version 2
 
 - [Merchant Integration and Payment Acceptance](#payment-acceptance)
   - [General API Information](./rest-api.md#general-api-information)
