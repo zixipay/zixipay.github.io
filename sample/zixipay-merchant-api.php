@@ -7,8 +7,8 @@ $prms = array(
     'currency'  => 'BTC',             // currency
     'ref'       => 'anyreference',    // any unique reference from your platfrom
     'uid'       => $uid,
-		'ts'        => time()
-	);
+    'ts'        => time()
+);
 
 // getpaymentwallet call
 $result = ZixiPay_ApiCall('getpaymentwallet', $prms, $apikey);
