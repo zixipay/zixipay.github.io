@@ -14,7 +14,7 @@ Any questions about the API endpoints? Send an email to apisupport@zixipay.com
 
 Name | Description
 ------------ | ------------
-[api-preparation.md](./api-preparation.md) | Preparation steps before using ZixiPay API
+[api-activation.md](./api-activation.md) | How to activate your ZixiPay API
 [rest-api.md](./rest-api.md) | Details on ZixiPay API
 [merchant-integration.md](./merchant.md) | Details on how to accept crypto payment
 [samples/zixipay-api.php](./samples/zixipay-api.php)|ZixiPay API PHP sample
