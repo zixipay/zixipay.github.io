@@ -79,7 +79,7 @@ If the IPN Callback URL is set in the Merchant settings, an HTTPS POST will be m
 Name | Type | Description
 ------------ | ------------ | ------------
 ref | string |Reference tag to this payment wallet
-wallet | string |Payment wallet address
+wallet | string |Receiving wallet address
 amount|number| amount of the incoming payment
 fee|number|the processing fee that has been charged for auto-exhange, callback, both or will be zero if no fees has been charged
 currency | string | Any of the supported currencies (USDZ, EURZ, LTC, BTC, ETH or USDT)
