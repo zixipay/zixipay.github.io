@@ -71,7 +71,7 @@ sig | string | YES |HMAC-SHA256 signature
 
 
 ### IPN Callback Parameters
-If the IPN Callback URL is set in the Merchant settings, an HTTPS POST will be made to the URL with the following parameteres:
+If the IPN Callback URL is set in the Merchant settings, an HTTPS POST will be made to the Callback URL with the following parameteres:
 
 **Parameters:**
 
@@ -88,4 +88,4 @@ zxid | string | ZixiPay transaction id
 time | number | Transaction time (Unix time)
 sig | string | HMAC-SHA256 signature (will be null if hash signature has not been set in the Merchant settings)
 
-**IMPORTANT:** Please make sure ZixiPay's IP address (185.17.146.83) and TCP port 443 is open on your callback receiving server.
+**IMPORTANT:** If your receiving server is behind a firewall, ZixiPay's IP address (185.17.146.83) and TCP port 443 needs to be permitted to pass through.
