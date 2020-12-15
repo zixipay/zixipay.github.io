@@ -71,7 +71,7 @@ sig | string | YES |HMAC-SHA256 signature
 
 
 ### IPN Callback Parameters
-If the IPN Callback URL is set in the Merchant settings, an HTTP POST request will be made to the defined URL with the following parameteres:
+If the IPN Callback URL is set in the Merchant settings, an HTTPS POST will be made to the URL with the following parameteres:
 
 **Parameters:**
 
@@ -79,10 +79,13 @@ If the IPN Callback URL is set in the Merchant settings, an HTTP POST request wi
 Name | Type | Description
 ------------ | ------------ | ------------
 ref | string |Reference tag to this payment wallet
+wallet | string |Payment wallet address
 amount|number| amount of the incoming payment
-fee|number|the fee that has been charged for auto-exhange, callback, both or will be zero if no fees has been charged
+fee|number|the processing fee that has been charged for auto-exhange, callback, both or will be zero if no fees has been charged
 currency | string | Any of the supported currencies (USDZ, EURZ, LTC, BTC, ETH or USDT)
 txid | string | blockchain transaction id
 zxid | string | ZixiPay transaction id
-ts | number | Unix time
+ts | number | Transaction time (Unix time)
 sig | string | HMAC-SHA256 signature (will be null if hash signature has not been set in the Merchant settings)
+
+**IMPORTANT:** Please make sure ZixiPay's IP address (185.17.146.83) and TCP port 443 is open on your callback receiving server.
