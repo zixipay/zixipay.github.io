@@ -85,7 +85,7 @@ fee|number|the processing fee that has been charged for auto-exhange, callback, 
 currency | string | Any of the supported currencies (USDZ, EURZ, LTC, BTC, ETH or USDT)
 txid | string | blockchain transaction id
 zxid | string | ZixiPay transaction id
-ts | number | Transaction time (Unix time)
+time | number | Transaction time (Unix time)
 sig | string | HMAC-SHA256 signature (will be null if hash signature has not been set in the Merchant settings)
 
 **IMPORTANT:** Please make sure ZixiPay's IP address (185.17.146.83) and TCP port 443 is open on your callback receiving server.
