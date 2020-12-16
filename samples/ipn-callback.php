@@ -13,8 +13,8 @@ $txid = $_POST['txid'];           // blockchain transaction id
 $zxid = $_POST['zxid'];           // ZixiPay transaction id
 $time = $_POST['time'];           // time of transaction
 
-$post = http_build_query($_POST);       // create http query out of POST variables
-$payload = explode('&sig=', $post)[0];  // take the signture 
+$post = http_build_query($_POST);       // create http query out of the POST variables
+$payload = explode('&sig=', $post)[0];  // remove the signture part from the POST varaiables
 
 
 // check if the callback has a signature and the signature is correct
