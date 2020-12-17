@@ -67,6 +67,8 @@ sig | string | YES |HMAC-SHA256 signature
 }
 ```
 **IMPORTANT:** Calls to this endpoint with the same ```ref``` tag would return the same wallet address.
+
+
 **BONUS:** Calls to this endpoint return a URL for qr-code of the wallet address which could be easily used in HTML ```img``` tag as its ```src```.
 
 
