@@ -72,7 +72,7 @@ sig | string | YES |HMAC-SHA256 signature
 **BONUS:** Calls to this endpoint returns a URL for the qr-code of the wallet address which could be easily used in HTML ```img``` tag as its ```src```.
 
 
-------------------------------------
+---
 
 ### IPN Callback Parameters
 If the IPN Callback URL is set in the Merchant settings, an HTTPS POST will be made to the Callback URL with the following parameteres:
