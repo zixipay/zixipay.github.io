@@ -8,7 +8,7 @@ ZixiPay Wallet services is available on [Web](https://zixipay.com/), Mobile App 
 
 ZixiPay Wallet APIs has been designed to be highly secure and easy to integrate with any kind of platforms for automatic or mass transfers of the supported cryptocurrencies (BTC, ETH, LTC and USDT).
 
-ZixiPay Merchant API alllows accepting crypto payments with an automated payment notification callback function. Merchant API could be integrated and utilized in different circumstances lile invoice payment, wallet service, e-commerce, etc.  
+ZixiPay Merchant API alllows accepting crypto payments with an automated payment notification callback function. Merchant API could be integrated and utilized in all kind of use cases such as invoice payments, wallet services, e-commerce, exchange services, etc. 
 
 Official Announcements regarding changes, downtime, etc. to the APIs will be posted on: [Twitter](https://twitter.com/zixipay) and [Telegram](https://t.me/zixipay).
 
