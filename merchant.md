@@ -31,7 +31,8 @@ How to set up and activate the ZixiPay Merchant API:
 ```
 POST /apiv2/getpaymentwallet
 ```
-Get payment wallet address
+Get payment wallet address.
+This enpoint returns a new wallet address everytime it is called.
 
 **Parameters:**
 
