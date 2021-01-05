@@ -323,7 +323,7 @@ sig | string | YES |HMAC-SHA256 signature
 }
 ```
 ### Transactional Endpoints
-#### withdraw
+#### **withdraw**
 ```
 POST /apiv2/withdraw
 ```
@@ -358,7 +358,7 @@ sig | string | YES |HMAC-SHA256 signature
   ]
 }
 ```
-#### transfer
+#### **transfer**
 ```
 POST /apiv2/transfer
 ```
