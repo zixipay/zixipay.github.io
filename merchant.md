@@ -94,4 +94,5 @@ time | number | Transaction time (Unix time)
 sig | string | HMAC-SHA256 signature (will be null if hash signature has not been set in the Merchant settings)
 
 **IMPORTANT:** If the receiving end is behind a firewall, ZixiPay's IP address (185.17.146.83) and TCP port 443 needs to be permitted to pass through.
+
 **IMPORTANT:** Call back does HTTPS only so SSL needs to be active and valid on the receiving end.
