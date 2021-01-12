@@ -89,8 +89,8 @@ amount|number| amount of the incoming payment
 fee|number|the processing fee that has been charged for auto-exhange, callback, both or will be zero if no fees has been charged
 currency | string | Any of the supported currencies (USDZ, EURZ, LTC, BTC, ETH or USDT)
 exchange | boolean | 0: if auto-echange to USDZ has NOT been done.<br />1: if auto-exchange to USDZ has been done.
-xcurrency | string | actual incoming currency if auto-exchange to USDZ has been done. Will be null otherwise.
-xrate | number | applicable exchange rate if auto-exchange to USDZ has been done. Will be null otherwise.
+xcurrency | string | actual incoming currency if auto-exchange to USDZ has been done, null otherwise.
+xrate | number | applicable exchange rate if auto-exchange to USDZ has been done, null otherwise.
 txid | string | blockchain transaction id
 zxid | string | ZixiPay transaction id
 time | number | Transaction time (Unix time)
