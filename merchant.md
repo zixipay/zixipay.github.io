@@ -88,7 +88,7 @@ wallet | string |Receiving wallet address
 amount|number| amount of the incoming payment
 fee|number|the processing fee that has been charged for auto-exhange, callback, both or will be zero if no fees has been charged
 currency | string | Any of the supported currencies (USDZ, EURZ, LTC, BTC, ETH or USDT)
-exchange | boolean | 0: if no exchange auto echange has been done<br />1: if auto exchange has been done
+exchange | boolean | 0: if no auto echange has been done<br />1: if auto exchange has been done
 xcurrency | string | actual incoming currency if auto exchange has been done. It could be one of these (USDZ, EURZ, LTC, BTC, ETH or USDT)
 xrate | number | applicable exchange rate if auto exchange has been done
 txid | string | blockchain transaction id
