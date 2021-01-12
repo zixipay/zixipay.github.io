@@ -88,9 +88,9 @@ wallet | string |Receiving wallet address
 amount|number| amount of the incoming payment
 fee|number|the processing fee that has been charged for auto-exhange, callback, both or will be zero if no fees has been charged
 currency | string | Any of the supported currencies (USDZ, EURZ, LTC, BTC, ETH or USDT)
-exchange | boolean | 0: if no auto-echange has been done.<br />1: if auto-exchange has been done.
-xcurrency | string | actual incoming currency if auto-exchange has been done. Will be null otherwise.
-xrate | number | applicable exchange rate if auto-exchange has been done. Will be null otherwise.
+exchange | boolean | 0: if no auto-echange to USDZ has been done.<br />1: if auto-exchange has been done.
+xcurrency | string | actual incoming currency if auto-exchange to USDZ has been done. Will be null otherwise.
+xrate | number | applicable exchange rate if auto-exchange to USDZ has been done. Will be null otherwise.
 txid | string | blockchain transaction id
 zxid | string | ZixiPay transaction id
 time | number | Transaction time (Unix time)
