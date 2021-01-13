@@ -89,13 +89,15 @@ amount|number| amount of the incoming payment
 fee|number|the processing fee that has been charged for auto-exhange, callback, both or will be zero if no fees has been charged
 currency | string | Any of the supported currencies (USDZ, EURZ, LTC, BTC, ETH or USDT)
 exchange<sup>*</sup> | boolean | 0: if auto-echange to USDZ has NOT been done.<br />1: if auto-exchange to USDZ has been done.
-xamount | number | actual incoming payment amount if auto-exchange to USDZ has been done, null otherwise.
-xcurrency | string | actual incoming currency if auto-exchange to USDZ has been done, null otherwise.
-xrate | number | applicable exchange rate if auto-exchange to USDZ has been done, null otherwise.
+xamount<sup>*</sup> | number | actual incoming payment amount if auto-exchange to USDZ has been done, null otherwise.
+xcurrency<sup>*</sup> | string | actual incoming currency if auto-exchange to USDZ has been done, null otherwise.
+xrate<sup>*</sup> | number | applicable exchange rate if auto-exchange to USDZ has been done, null otherwise.
 txid | string | blockchain transaction id
 zxid | string | ZixiPay transaction id
 time | number | Transaction time (Unix time)
 sig | string | HMAC-SHA256 signature (will be null if hash signature has not been set in the Merchant settings)
+
+** * exchange, xamount, xcurrency and xrate are used when ```Automatic exchange to USDZ``` is activated in the [Merchant API Settings](#merchant-settings)**
 
 **IMPORTANT:** If the receiving end is behind a firewall, ZixiPay's IP address (185.17.146.83) and TCP port 443 needs to be permitted to pass through.
 
