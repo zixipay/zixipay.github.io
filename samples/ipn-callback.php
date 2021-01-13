@@ -10,6 +10,7 @@ $amount = $_POST['amount'];       // amount
 $fee = $_POST['fee'];             // fee
 $currency = $_POST['currency'];   // currency
 $exchange = $_POST['exchange'];   // has auto-echange to USDZ been done?
+$xamount = $_POST['xamount'];     // actual incoming payment amount if auto-exchange to USDZ has been done
 $xcurrency = $_POST['xcurrency']; // actual incoming currency if auto-exchange to USDZ has been done
 $xrate = $_POST['xrate'];         // applicable exchange rate if auto-exchange to USDZ has been done
 $txid = $_POST['txid'];           // blockchain transaction id
