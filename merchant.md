@@ -95,7 +95,7 @@ xrate<sup>*</sup> | number | applicable exchange rate if auto-exchange to USDZ h
 txid | string | blockchain transaction id
 zxid | string | ZixiPay transaction id
 time | number | Transaction time (Unix time)
-sig | string | HMAC-SHA256 signature (will be null if hash signature has not been set in the Merchant settings)
+sig | string | HMAC-SHA256 signature (will be null if ```IPN callback hash key``` has not been set in the [Merchant Settings](#merchant-settings))
 
 **\* exchange, xamount, xcurrency and xrate are used when ```Automatic exchange to USDZ``` is activated in the [Merchant Settings](#merchant-settings).**
 
