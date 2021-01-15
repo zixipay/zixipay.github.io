@@ -374,8 +374,8 @@ Name | Type | Mandatory | Description
 amount | number | YES | amount to be transferred
 currency | string | YES |Any of the supported currencies (USDZ, EURZ, LTC, BTC, ETH or USDT)
 recipient | string | YES | recipient's email address or user id
-note | string | NO | internal comment for the transfer
-passcode | number | NO | 4 digit pin if the transfer needs to be passcode protected
+note | string | NO | internal comment for the transfer (optional)
+passcode | number | NO | 4 digit pin if the transfer needs to be passcode protected (optional)
 uid | string | YES |User ID
 ts | number | YES |Unix time
 sig | string | YES |HMAC-SHA256 signature
