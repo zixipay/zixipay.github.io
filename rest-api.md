@@ -327,7 +327,7 @@ sig | string | YES |HMAC-SHA256 signature
 ```
 POST /apiv2/withdraw
 ```
-Withdraw any of the supported cryptocurrencies
+Withdraw any of the supported cryptocurrencies.
 
 **Parameters:**
 
@@ -362,7 +362,9 @@ sig | string | YES |HMAC-SHA256 signature
 ```
 POST /apiv2/transfer
 ```
-Internal transfer any of the supported cryptocurrencies
+Internal transfer any of the supported cryptocurrencies.
+
+This endpoint is for tranferring funds to another ZixiPay wallet holder internally. 
 
 **Parameters:**
 
