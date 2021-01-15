@@ -91,7 +91,7 @@ currency | string | Any of the supported currencies (USDZ, EURZ, LTC, BTC, ETH o
 exchange<sup>*</sup> | boolean | 0: if auto-echange to USDZ has NOT been done.<br />1: if auto-exchange to USDZ has been done.
 xamount<sup>*</sup> | number | actual incoming payment amount if auto-exchange to USDZ has been done, null otherwise.
 xcurrency<sup>*</sup> | string | actual incoming currency if auto-exchange to USDZ has been done, null otherwise.
-xrate<sup>*</sup> | number | applicable exchange rate if auto-exchange to USDZ has been done, null otherwise.
+xrate<sup>*</sup> | number | applied exchange rate if auto-exchange to USDZ has been done, null otherwise.
 txid | string | blockchain transaction id
 zxid | string | ZixiPay transaction id
 time | number | Transaction time (Unix time)
