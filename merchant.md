@@ -9,6 +9,8 @@
     - [IPN Callback Parameters](#ipn-callback-parameters)
 
 ## Merchant integration and payment acceptance
+ZixiPay Merchant API alllows accepting crypto payments with an automated payment notification callback function. Merchant API could be integrated and utilized in all kind of use cases such as invoice payments, wallet services, e-commerce, exchange services, etc.
+
 * All [General API Information](./rest-api.md#general-api-information), [Endpoints Limit](./rest-api.md#endpoints-limit) and [Endpoints security](./rest-api.md#endpoints-security) are valid and applies.
 * All the merchant API endpoints are accessible only if your [ZixiPay](https://zixipay.com) wallet is verified and the [Merchant Setting](#merchant-settings) are set and active.
 
