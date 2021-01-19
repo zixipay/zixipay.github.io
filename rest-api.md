@@ -23,6 +23,7 @@
     - [Transactional Endpoints](#transactional-endpoints)
       - [withdraw](#withdraw)
       - [transfer](#transfer)
+      - [exchange](#exchange)
 
 ## General API Information
 * The base endpoint url is: **https://api.zixipay.com**
@@ -394,6 +395,46 @@ sig | string | YES |HMAC-SHA256 signature
       "status":"processed",                 // transaction status
       "txid":"TT2369512364598756",          // ZixiPay transaction id
       "passcode":""                         // transaction passcode
+    }
+  ]
+}
+```
+#### exchange
+```
+POST /apiv2/exchange
+```
+Inter-wallet exchange.
+
+This endpoint is used for exchanging funds between USDZ and other currencies. 
+
+**Parameters:**
+
+
+Name | Type | Mandatory | Description
+------------ | ------------ | ------------ | ------------
+amount | number | YES | amount to be transferred
+from | string | YES | from currency, any of the supported currencies (USDZ, EURZ, LTC, BTC, ETH or USDT)
+to | string | YES | to currency, any of the supported currencies (USDZ, EURZ, LTC, BTC, ETH or USDT)
+feein | boolean | NO | deduct the fee from the exchange amount? 0: don't deduct the fee from the exchange amount 1: deduct the fee from the exchange amount
+uid | string | YES |User ID
+ts | number | YES |Unix time
+sig | string | YES |HMAC-SHA256 signature
+
+
+**Response:**
+```javascript
+{
+  "result":"ok",
+  "payload":[
+    {
+      "fromamount": "10.00"                 // amount exchanged
+      "fromcurrency": "USDZ"                // from currency
+      "fromtxid": "TEYKJSVKGOOLHTOBDK3PN5"  // from exchange transaction id
+      "toamount": "0.00027019"              // echanged amount
+      "tocurrency": "BTC"                   // exchanged currency
+      "totxid": "TE0K8NP01X2ZHKRV5FO544"    // exchanged transaction id
+      "rate": "37010.30"                    // applied exchange rate
+      "fee": "0.30000000"                   // fee
     }
   ]
 }
