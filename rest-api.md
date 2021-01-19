@@ -372,7 +372,7 @@ This endpoint is for tranferring funds to another ZixiPay wallet holder internal
 
 Name | Type | Mandatory | Description
 ------------ | ------------ | ------------ | ------------
-amount | number | YES | amount to be exchanged
+amount | number | YES | amount to be transferred
 currency | string | YES |Any of the supported currencies (USDZ, EURZ, LTC, BTC, ETH or USDT)
 recipient | string | YES | recipient's email address or user id
 note | string | NO | internal comment for the transfer (optional)
@@ -412,7 +412,7 @@ This endpoint is used for exchanging funds between USDZ and other currencies.
 
 Name | Type | Mandatory | Description
 ------------ | ------------ | ------------ | ------------
-amount | number | YES | amount to be transferred
+amount | number | YES | amount to be exchanged
 from | string | YES | from currency, any of the supported currencies (USDZ, EURZ, LTC, BTC, ETH or USDT)
 to | string | YES | to currency, any of the supported currencies (USDZ, EURZ, LTC, BTC, ETH or USDT)
 feein | boolean | NO | deduct the fee from the exchange amount?<br />0: don't deduct the fee from the exchange amount<br />1: deduct the fee from the exchange amount<br />default: 0
