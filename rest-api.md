@@ -415,7 +415,7 @@ Name | Type | Mandatory | Description
 amount | number | YES | amount to be transferred
 from | string | YES | from currency, any of the supported currencies (USDZ, EURZ, LTC, BTC, ETH or USDT)
 to | string | YES | to currency, any of the supported currencies (USDZ, EURZ, LTC, BTC, ETH or USDT)
-feein | boolean | NO | deduct the fee from the exchange amount?<br />0: don't deduct the fee from the exchange amount<br />1: deduct the fee from the exchange amount
+feein | boolean | NO | deduct the fee from the exchange amount?<br />0: don't deduct the fee from the exchange amount<br />1: deduct the fee from the exchange amount<br />default: 0
 uid | string | YES |User ID
 ts | number | YES |Unix time
 sig | string | YES |HMAC-SHA256 signature
