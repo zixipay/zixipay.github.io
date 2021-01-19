@@ -372,7 +372,7 @@ This endpoint is for tranferring funds to another ZixiPay wallet holder internal
 
 Name | Type | Mandatory | Description
 ------------ | ------------ | ------------ | ------------
-amount | number | YES | amount to be transferred
+amount | number | YES | amount to be exchanged
 currency | string | YES |Any of the supported currencies (USDZ, EURZ, LTC, BTC, ETH or USDT)
 recipient | string | YES | recipient's email address or user id
 note | string | NO | internal comment for the transfer (optional)
