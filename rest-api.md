@@ -361,7 +361,7 @@ sig | string | YES |HMAC-SHA256 signature
 }
 ```
 
-**IMPORTANT:** If the ```feein``` parameter is set to 0 (default), a total of ```amount``` + the relevant ```fee``` would be deducted from the wallet.
+**IMPORTANT:** If the ```feein``` parameter is set to 0 (default), a total of ```amount``` + the applicable ```fee``` would be deducted from the wallet.
 
 #### transfer
 ```
@@ -405,7 +405,7 @@ sig | string | YES |HMAC-SHA256 signature
 }
 ```
 
-**IMPORTANT:** If the ```feein``` parameter is set to 0 (default), a total of ```amount``` + the relevant ```fee``` would be deducted from the wallet.
+**IMPORTANT:** If the ```feein``` parameter is set to 0 (default), a total of ```amount``` + the applicable ```fee``` would be deducted from the wallet.
 
 #### exchange
 ```
@@ -448,4 +448,4 @@ sig | string | YES |HMAC-SHA256 signature
 }
 ```
 
-**IMPORTANT:** If the ```feein``` parameter is set to 0 (default), a total of ```amount``` + the relevant ```fee``` would be deducted from the wallet.
+**IMPORTANT:** If the ```feein``` parameter is set to 0 (default), a total of ```amount``` + the applicable ```fee``` would be deducted from the wallet.
