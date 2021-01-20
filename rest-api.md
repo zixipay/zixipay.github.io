@@ -338,7 +338,7 @@ Name | Type | Mandatory | Description
 amount | number | YES | amount to be withdrawn
 currency | string | YES |Any of the supported currencies (USDZ, EURZ, LTC, BTC, ETH or USDT)
 recipient | string | YES | recipient's wallet address
-feein | boolean | NO | fee inclusive, deduct the fee from the withdrawal amount<br />0: don't deduct the fee from the withdrawal amount<br />1: deduct the fee from the withdrawal amount<br />default: 0
+feein | boolean | NO | fee inclusive, deduct the fee from the withdrawal amount<br />0: don't deduct the fee from the withdrawal amount (default)<br />1: deduct the fee from the withdrawal amount
 uid | string | YES |User ID
 ts | number | YES |Unix time
 sig | string | YES |HMAC-SHA256 signature
@@ -381,7 +381,7 @@ currency | string | YES |Any of the supported currencies (USDZ, EURZ, LTC, BTC, 
 recipient | string | YES | recipient's email address or user id
 note | string | NO | internal comment for the transfer (optional)
 passcode | number | NO | 4 digit pin if the transfer needs to be passcode protected (optional)
-feein | boolean | NO | fee inclusive, deduct the fee from the transfer amount<br />0: don't deduct the fee from the transfer amount<br />1: deduct the fee from the transfer amount<br />default: 0
+feein | boolean | NO | fee inclusive, deduct the fee from the transfer amount<br />0: don't deduct the fee from the transfer amount (default)<br />1: deduct the fee from the transfer amount
 uid | string | YES |User ID
 ts | number | YES |Unix time
 sig | string | YES |HMAC-SHA256 signature
@@ -423,7 +423,7 @@ Name | Type | Mandatory | Description
 amount | number | YES | amount to be exchanged
 from | string | YES | from currency, any of the supported currencies (USDZ, EURZ, LTC, BTC, ETH or USDT)
 to | string | YES | to currency, any of the supported currencies (USDZ, EURZ, LTC, BTC, ETH or USDT)
-feein | boolean | NO | fee inclusive, deduct the fee from the exchange amount<br />0: don't deduct the fee from the exchange amount<br />1: deduct the fee from the exchange amount<br />default: 0
+feein | boolean | NO | fee inclusive, deduct the fee from the exchange amount<br />0: don't deduct the fee from the exchange amount (default)<br />1: deduct the fee from the exchange amount
 uid | string | YES |User ID
 ts | number | YES |Unix time
 sig | string | YES |HMAC-SHA256 signature
