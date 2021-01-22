@@ -190,7 +190,7 @@ sig | string | YES |HMAC-SHA256 signature
 ```
 POST /apiv2/getwallet
 ```
-Get wallet address
+Get the wallet address of a specific currency.
 
 **Parameters:**
 
