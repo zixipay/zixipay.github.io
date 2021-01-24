@@ -53,18 +53,25 @@ sig | string | YES |HMAC-SHA256 signature
   "result":"ok",
   "payload":[
     {
-      "name":"Tether OMNI",   // wallet name
+      "name":"Tether TRC20",   // wallet name
       "code":"USDT",          // currency symbol
-      "address":"1PkYiGCF3zVif5vm1ogXYuvtGaK3p7qLgK", // wallet address
-      "qr-code":"https://qrg.zixipay.com/api/qr.php?data=1PkYiGCF3zVif5vm1ogXYuvtGaK3p7qLgK", // QR-Code of the address
+      "address":"TH53ejapLDKDFxxqP2RREfxCNtW26gFKeb", // wallet address
+      "qr-code":"https://qrg.zixipay.com/api/qr.php?data=TH53ejapLDKDFxxqP2RREfxCNtW26gFKeb", // QR-Code of the address
       "confirm":1             // number of confirmations required
     },
     {
       "name":"Tether ERC20",
       "code":"USDT",
       "address":"0x0ed8991afc868c45ffbcd4afdf7ebc273cf38ed2",
-      "qr-code":"https://qrg.zixipay.com/api/qr.php?data=0x0ed8991afc868c45ffbcd4afdf7ebc273cf38ed2", // QR-Code of the address
+      "qr-code":"https://qrg.zixipay.com/api/qr.php?data=0x0ed8991afc868c45ffbcd4afdf7ebc273cf38ed2",
       "confirm":3
+    },
+    {
+      "name":"Tether OMNI",
+      "code":"USDT",
+      "address":"1PkYiGCF3zVif5vm1ogXYuvtGaK3p7qLgK",
+      "qr-code":"https://qrg.zixipay.com/api/qr.php?data=1PkYiGCF3zVif5vm1ogXYuvtGaK3p7qLgK",
+      "confirm":1
     }
   ]
 }
