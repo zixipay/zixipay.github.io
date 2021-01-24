@@ -208,16 +208,22 @@ sig | string | YES |HMAC-SHA256 signature
   "result":"ok",
   "payload":[
     {
-      "name":"Tether OMNI",   // wallet name
+      "name":"Tether TRC20",   // wallet name
       "code":"USDT",          // currency symbol
-      "address":"1PkYiGCF3zVif5vm1ogXYuvtGaK3p7qLgK", // wallet address
-      "confirm":1             // number of confirmations required
+      "address":"THaxGiBjvTCyXLdfAnroqZ3F9DE3MWzVqu", // wallet address
+      "confirm":20             // number of confirmations required
     },
     {
       "name":"Tether ERC20",
       "code":"USDT",
       "address":"0x0ed8991afc868c45ffbcd4afdf7ebc273cf38ed2",
       "confirm":3
+    },
+    {
+      "name":"Tether OMNI",
+      "code":"USDT",
+      "address":"1PkYiGCF3zVif5vm1ogXYuvtGaK3p7qLgK",
+      "confirm":1             //
     }
   ]
 }
