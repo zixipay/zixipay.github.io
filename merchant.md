@@ -57,7 +57,7 @@ sig | string | YES |HMAC-SHA256 signature
       "code":"USDT",          // currency symbol
       "address":"TH53ejapLDKDFxxqP2RREfxCNtW26gFKeb", // wallet address
       "qr-code":"https://qrg.zixipay.com/api/qr.php?data=TH53ejapLDKDFxxqP2RREfxCNtW26gFKeb", // QR-Code of the address
-      "confirm":1             // number of confirmations required
+      "confirm":20             // number of confirmations required
     },
     {
       "name":"Tether ERC20",
