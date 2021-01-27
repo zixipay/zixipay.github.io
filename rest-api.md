@@ -336,6 +336,8 @@ POST /apiv2/withdraw
 ```
 Withdraw any of the supported cryptocurrencies.
 
+This endpoint is used for sending funds to another wallet address on the blockchain.
+
 **Parameters:**
 
 
@@ -343,7 +345,7 @@ Name | Type | Mandatory | Description
 ------------ | ------------ | ------------ | ------------
 amount | number | YES | amount to be withdrawn
 currency | string | YES |Any of the supported currencies (USDZ, EURZ, LTC, BTC, ETH or USDT)
-recipient | string | YES | recipient's wallet address (for USDT withdrawal TRC20, ERC20 or OMNI wallet address is acceptable)
+recipient | string | YES | recipient's wallet address (for USDT withdrawal: TRC20, ERC20 or OMNI addresses are acceptable)
 feein | boolean | NO | fee inclusive, deduct the fee from the withdrawal amount<br />0: (default) don't deduct the fee from the withdrawal amount<br />1: deduct the fee from the withdrawal amount
 uid | string | YES |User ID
 ts | number | YES |Unix time
@@ -375,7 +377,7 @@ POST /apiv2/transfer
 ```
 Internal transfer any of the supported cryptocurrencies.
 
-This endpoint is for tranferring funds to another ZixiPay wallet holder internally. 
+This endpoint is used for transferring funds to another ZixiPay wallet holder internally. Internal transfers are instant and irrevocable.
 
 **Parameters:**
 
