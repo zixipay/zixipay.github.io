@@ -47,6 +47,10 @@ uid | string | YES |ZixiPay User ID
 ts | number | YES |Unix time
 sig | string | YES |HMAC-SHA256 signature
 
+
+**IMPORTANT:** Calls to this endpoint with the same ```ref``` tag would return the same wallet address. This is useful when you need to have persistant wallet address for each client/account in your platform.
+
+
 **Response:**
 ```javascript
 {
@@ -76,8 +80,6 @@ sig | string | YES |HMAC-SHA256 signature
   ]
 }
 ```
-**IMPORTANT:** Calls to this endpoint with the same ```ref``` tag would return the same wallet address. This is useful when you need to have persistant wallet address for each client/account in your platform.
-
 
 **QR-Code:** Calls to this endpoint returns a URL for the ```qr-code``` of the wallet address which could be easily used in the ```<img>``` HTML tag as its ```src```.
 
