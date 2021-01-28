@@ -148,7 +148,7 @@ uid | string | YES |User ID
 ts | number | YES |Unix time
 sig | string | YES |HMAC-SHA256 signature
 
-**Response:**
+**Response:** (Example)
 ```javascript
 {
   "result":"ok",
@@ -202,7 +202,7 @@ uid | string | YES |User ID
 ts | number | YES |Unix time
 sig | string | YES |HMAC-SHA256 signature
 
-**Response:**
+**Response:** (Example)
 ```javascript
 {
   "result":"ok",
@@ -244,7 +244,7 @@ ts | number | YES |Unix time
 sig | string | YES |HMAC-SHA256 signature
 
 
-**Response:**
+**Response:** (Example)
 ```javascript
 {
   "result":"ok",
@@ -306,7 +306,7 @@ uid | string | YES |User ID
 ts | number | YES |Unix time
 sig | string | YES |HMAC-SHA256 signature
 
-**Response:**
+**Response:** (Example)
 ```javascript
 {
   "result":"ok",
@@ -354,7 +354,7 @@ sig | string | YES |HMAC-SHA256 signature
 **IMPORTANT:** If the ```feein``` parameter is set to 0 (default), a total of ```amount``` + the applicable ```fee``` would be deducted from the wallet.
 
 
-**Response:**
+**Response:** (Example)
 ```javascript
 {
   "result":"ok",
@@ -397,7 +397,7 @@ sig | string | YES |HMAC-SHA256 signature
 **IMPORTANT:** If the ```feein``` parameter is set to 0 (default), a total of ```amount``` + the applicable ```fee``` would be deducted from the wallet.
 
 
-**Response:**
+**Response:** (Example)
 ```javascript
 {
   "result":"ok",
@@ -439,7 +439,7 @@ sig | string | YES |HMAC-SHA256 signature
 **IMPORTANT:** If the ```feein``` parameter is set to 0 (default), a total of ```amount``` + the applicable ```fee``` would be deducted from the wallet.
 
 
-**Response:**
+**Response:** (Example)
 ```javascript
 {
   "result":"ok",
