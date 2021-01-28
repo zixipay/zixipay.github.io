@@ -51,7 +51,7 @@ sig | string | YES |HMAC-SHA256 signature
 **IMPORTANT:** Calls to this endpoint with the same ```ref``` tag would return the same wallet address. This is useful when you need to have persistant wallet address for each client/account in your platform.
 
 
-**Response:**
+**Response:** (Example)
 ```javascript
 {
   "result":"ok",
