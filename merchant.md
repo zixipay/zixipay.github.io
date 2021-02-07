@@ -94,11 +94,11 @@ If the IPN Callback URL is set in the Merchant settings, upon receiving funds in
 
 Name | Type | Description
 ------------ | ------------ | ------------
-ref | string |Reference tag to this payment wallet
-wallet | string |Receiving wallet address that has been generated using ```getpaymentwallet``` API endpoint.
+ref | string |reference tag to this payment wallet
+wallet | string |receiving wallet address that has been generated using ```getpaymentwallet``` API endpoint.
 amount|number| amount of the incoming payment
-fee|number|the processing fee that has been charged for auto-exhange, callback, both or will be zero if no fees has been charged
-currency | string | Any of the supported currencies (USDZ, EURZ, LTC, BTC, ETH or USDT)
+fee|number|processing fee for auto-exhange, callback or both. Will be zero if no fees was applicable.
+currency | string | any of the supported currencies (USDZ, EURZ, LTC, BTC, ETH or USDT)
 exchange<sup>*</sup> | boolean | 0: if auto-echange to USDZ has NOT been done.<br />1: if auto-exchange to USDZ has been done.
 xamount<sup>*</sup> | number | actual incoming payment amount if auto-exchange to USDZ has been done, null otherwise.
 xcurrency<sup>*</sup> | string | actual incoming currency if auto-exchange to USDZ has been done, null otherwise.
