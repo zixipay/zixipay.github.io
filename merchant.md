@@ -57,7 +57,7 @@ sig | string | YES |HMAC-SHA256 signature
   "result":"ok",
   "payload":[
     {
-      "name":"Tether TRC20",   // wallet name
+      "name":"Tether TRC20",   // currency name
       "code":"USDT",          // currency symbol
       "address":"TH53ejapLDKDFxxqP2RREfxCNtW26gFKeb", // wallet address
       "qr-code":"https://qrg.zixipay.com/api/qr.php?data=TH53ejapLDKDFxxqP2RREfxCNtW26gFKeb", // QR-Code of the address
