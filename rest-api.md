@@ -323,7 +323,8 @@ sig | string | YES |HMAC-SHA256 signature
         "currency":"USDT",              // currency of the transaction
         "sender":"Tether",              // sender
         "recipient":"My Wallet",        // recipient
-        "details":""                    // transaction details
+        "details":"",                   // transaction details
+        "extras":""                     // transaction extra details
       }
     ]
   }
