@@ -22,4 +22,4 @@ Name | Description
 [samples/zixipay-api.php](./samples/zixipay-api.php)|ZixiPay API, PHP sample code
 [samples/zixipay-merchant-api.php](./samples/zixipay-merchant-api.php)|ZixiPay Merchant API, PHP sample code
 [samples/ipn-callback.php](./samples/ipn-callback.php)|How to process the IPN callback, PHP sample code
-[assets](./assets/)|ZixiPay graphic assets
+[assets](./assets/)|ZixiPay image assets
