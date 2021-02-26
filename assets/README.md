@@ -1,1 +1,1 @@
-
+ZixiPay Graphic Assets
