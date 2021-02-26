@@ -1,4 +1,4 @@
-# ZixiPay Image Assets
+# Image Assets
 
 Name | Description
 ------------ | ------------
