@@ -344,7 +344,7 @@ This endpoint is used for sending funds to another wallet address on the blockch
 
 Name | Type | Mandatory | Description
 ------------ | ------------ | ------------ | ------------
-amount | number | YES | amount to be withdrawn
+amount | decimal | YES | amount to be withdrawn
 currency | string | YES |Any of the supported currencies (USDZ, EURZ, LTC, BTC, ETH or USDT)
 recipient | string | YES | recipient's wallet address (for USDT withdrawal: TRC20, ERC20 or OMNI addresses are acceptable)
 feein | boolean | NO | fee inclusive, deduct the fee from the withdrawal amount<br />0: (default) don't deduct the fee from the withdrawal amount<br />1: deduct the fee from the withdrawal amount
@@ -385,7 +385,7 @@ This endpoint is used for transferring funds to another ZixiPay wallet holder in
 
 Name | Type | Mandatory | Description
 ------------ | ------------ | ------------ | ------------
-amount | number | YES | amount to be transferred
+amount | decimal | YES | amount to be transferred
 currency | string | YES |Any of the supported currencies (USDZ, EURZ, LTC, BTC, ETH or USDT)
 recipient | string | YES | recipient's email address or user id
 note | string | NO | internal comment for the transfer (optional)
@@ -429,7 +429,7 @@ This endpoint is used for exchanging funds between USDZ and other currencies.
 
 Name | Type | Mandatory | Description
 ------------ | ------------ | ------------ | ------------
-amount | number | YES | amount to be exchanged
+amount | decimal | YES | amount to be exchanged
 from | string | YES | from currency, any of the supported currencies (USDZ, EURZ, LTC, BTC, ETH or USDT)
 to | string | YES | to currency, any of the supported currencies (USDZ, EURZ, LTC, BTC, ETH or USDT)
 feein | boolean | NO | fee inclusive, deduct the fee from the exchange amount<br />0: (default) don't deduct the fee from the exchange amount<br />1: deduct the fee from the exchange amount
