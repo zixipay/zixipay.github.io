@@ -61,14 +61,13 @@
 ### Authorized IP
 * Access to all endpoints is restricted to the predefined IP address in your ZixiPay Wallet `API Access Authorized IP`.
 ### User ID
-* All endpoints require a parameter, `uid`, to be sent in the `request body` which should be your ZixiPay Wallet `User ID`.
+* All endpoints require parameter `uid` to be sent in the `request body` which should be your ZixiPay Wallet `User ID`.
 * The `uid` is **not case sensitive** but needs to be sent in lower case.
 ### Timestamp
-* All endpoints require a parameter, `ts`, to be sent in the `request body` which should be the Unix time when the request was created and sent.
-* API calls will be rejected if the `ts` is not within 60 seconds window from the endpoint server's Unix time.
+* All endpoints require parameter `ts` to be sent in the `request body` which should be the Unix time when the request was created and sent.
+* API calls will be rejected if the `ts` is not within 60 seconds window from the endpoint server's time.
 ### Signature
-* All endpoints require an additional parameter, `sig`, to be
-  sent **at the end** of the `request body`.
+* All endpoints require parameter `sig` to be sent **at the end** of the `request body`.
 * Endpoints use `HMAC-SHA256` signatures. The `HMAC-SHA256 signature` is a keyed `HMAC-SHA256` operation.
   Use your ZixiPay Wallet `API Access Key` as the key and the `request body` as the value for the HMAC operation.
 * The `sig` is **not case sensitive** but needs to be sent in lower case.
