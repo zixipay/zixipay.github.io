@@ -56,15 +56,15 @@
 * Surpassing the rate limit wil result in a 503 HTTP return code.
 * When a 503 is received, the caller needs to stop and not spam the API.
 * **Repeated violation of the rate limit will result in an automatic IP ban.**
-* **The rate limit on the endpoints are based on the IP address and not the API endpoint.**
+* **The rate limit on the endpoints are based on the caller's IP address and not the API endpoint.**
 ## Endpoints security
 ### Authorized IP
 * Access to all endpoints is restricted to the predefined IP address in your ZixiPay Wallet `API Access Authorized IP`.
 ### User ID
-* All endpoints require parameter `uid` to be sent in the `request body` which should be your ZixiPay Wallet `User ID`.
+* All endpoints require parameter `uid` to be sent in the `request body` which is your ZixiPay Wallet `User ID`.
 * The `uid` is **not case sensitive** but needs to be sent in lower case.
 ### Timestamp
-* All endpoints require parameter `ts` to be sent in the `request body` which should be the Unix time when the request was created and sent.
+* All endpoints require parameter `ts` to be sent in the `request body` which is the Unix time when the request was created and sent.
 * API calls will be rejected if the `ts` is not within 60 seconds window from the endpoint server's time.
 ### Signature
 * All endpoints require parameter `sig` to be sent **at the end** of the `request body`.
