@@ -59,7 +59,7 @@
 * **The rate limit on the endpoints are based on the caller's IP address and not the API endpoint.**
 ## Endpoints security
 ### Authorized IP
-* Access to all endpoints is restricted to the predefined IP address in your ZixiPay Wallet `API Access Authorized IP`.
+* Access to all endpoints is restricted to the predefined IP address in your ZixiPay Wallet settings `API Access Authorized IP`.
 ### User ID
 * All endpoints require parameter `uid` to be sent in the `request body` which is your ZixiPay Wallet `User ID`.
 * The `uid` is **not case sensitive** but needs to be sent in lower case.
