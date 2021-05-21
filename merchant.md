@@ -97,7 +97,7 @@ Name | Type | Description
 ref | string |reference tag to this payment wallet
 wallet | string |receiving wallet address that has been generated using ```getpaymentwallet``` API endpoint.
 amount|number| amount of the incoming payment
-fee|number|processing fee for auto-exhange, callback or both. Will be zero if no fees was applicable.
+fee|number|Merchant API processing fee including the exhange fee if the auto-exchange to USDZ has been enabled.
 currency | string | any of the supported currencies (USDZ, EURZ, LTC, BTC, ETH or USDT)
 exchange<sup>*</sup> | boolean | 0: if auto-echange to USDZ has NOT been done.<br />1: if auto-exchange to USDZ has been done.
 xamount<sup>*</sup> | number | actual incoming payment amount if auto-exchange to USDZ has been done, null otherwise.
