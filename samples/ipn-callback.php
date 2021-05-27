@@ -1,6 +1,6 @@
 <?php
 
-$ipn_key = '';              // your IPN callback key
+$ipn_key = '';      // enter your IPN callback key here, could be left blank if you don't want a signed IPN callback 
 
 // get all the POST variables
 $signature = $_POST['sig'];       // HMAC-SHA256 signature
@@ -21,8 +21,8 @@ $post = http_build_query($_POST);       // create http query out of the POST var
 $payload = explode('&sig=', $post)[0];  // remove the signture part from the POST varaiables
 
 
-// check if the callback has a signature and the signature is correct
-if ($signature) {
+// check if the callback needs to be signed and the signature is correct
+if ($ipn_key) {
   if (hash_hmac('sha256', $payload, $ipn_key) != $signature)      // if the signature is wrong
     return FALSE;     // do nothing and return false or it could be anything that suites your platform
 }
