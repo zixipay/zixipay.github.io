@@ -22,7 +22,7 @@ $payload = explode('&sig=', $post)[0];  // remove the signture part from the POS
 
 
 // check if the callback needs to be signed and the signature is correct
-if ($ipn_key) {
+if (isset($ipn_key)) {
   if (!isset($signature) || hash_hmac('sha256', $payload, $ipn_key) != $signature)      // if the signature is wrong
     return FALSE;     // do nothing and return false or it could be anything that suites your platform
 }
