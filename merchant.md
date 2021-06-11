@@ -99,7 +99,7 @@ wallet | string |receiving wallet address that has been generated using ```getpa
 amount|number| amount of the incoming payment
 fee|number|merchant API processing fee + the exhange fee if the auto-exchange to USDZ has been enabled.
 currency | string | any of the supported currencies (USDZ, EURZ, LTC, BTC, ETH or USDT)
-exchange<sup>*</sup> | boolean | 0: if auto-echange to USDZ has NOT been done.<br />1: if auto-exchange to USDZ has been done.
+exchange<sup>*</sup> | binary | 0: if auto-echange to USDZ has NOT been done.<br />1: if auto-exchange to USDZ has been done.
 xamount<sup>*</sup> | number | actual incoming payment amount if auto-exchange to USDZ has been done, null otherwise.
 xcurrency<sup>*</sup> | string | actual incoming currency if auto-exchange to USDZ has been done, null otherwise.
 xrate<sup>*</sup> | number | applied exchange rate if auto-exchange to USDZ has been done, null otherwise.
