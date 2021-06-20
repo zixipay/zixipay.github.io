@@ -12,10 +12,6 @@ $prms = array(
 $result = ZixiPay_ApiCall('getbalances', $prms, , $apikey);
 print_r($result);
 
-// getwallet call
-$result = ZixiPay_ApiCall('getwallet', $prms, $apikey);
-print_r($result);
-
 // getrates call
 $result = ZixiPay_ApiCall('getrates', $prms, $apikey);
 print_r($result);
