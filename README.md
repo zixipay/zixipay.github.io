@@ -19,7 +19,9 @@ Name | Description
 [api-activation.md](./api-activation.md) | How to activate your ZixiPay Wallet API
 [rest-api.md](./rest-api.md) |Complete details of ZixiPay Wallet API
 [merchant-integration.md](./merchant.md) | How to accept crypto payments, ZixiPay Merchant API, Crypto Acquiring
-[samples/zixipay-api.php](./samples/zixipay-api.php)|ZixiPay API, PHP sample code
-[samples/zixipay-merchant-api.php](./samples/zixipay-merchant-api.php)|ZixiPay Merchant API, PHP sample code
-[samples/ipn-callback.php](./samples/ipn-callback.php)|How to process the IPN callback, PHP sample code
+[samples/PHP/zixipay-api.php](./samples/PHP/zixipay-api.php)|ZixiPay API, PHP sample code
+[samples/PHP/zixipay-merchant-api.php](./samples/PHP/zixipay-merchant-api.php)|ZixiPay Merchant API, PHP sample code
+[samples/PHP/ipn-callback.php](./samples/PHP/ipn-callback.php)|How to process the IPN callback, PHP sample code
+[samples/Python/zixipay-api.py](./samples/Python/zixipay-api.py)|ZixiPay API, PHP sample code
+[samples/Python/zixipay-merchant-api.py](./samples/Python/zixipay-merchant-api.py)|ZixiPay Merchant API, PHP sample code
 [assets](./assets/)|ZixiPay image assets
