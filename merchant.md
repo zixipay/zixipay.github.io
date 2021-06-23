@@ -103,14 +103,14 @@ exchange<sup>*</sup> | binary | 0: if auto-echange to USDZ has NOT been done.<br
 xamount<sup>*</sup> | number | actual incoming payment amount if auto-exchange to USDZ has been done, null otherwise.
 xcurrency<sup>*</sup> | string | actual incoming currency if auto-exchange to USDZ has been done, null otherwise.
 xrate<sup>*</sup> | number | applied exchange rate if auto-exchange to USDZ has been done, null otherwise.
-txid | string | blockchain transaction id
+txid | string | blockchain txid/hash
 zxid | string | ZixiPay transaction id
 time | number | Transaction time (Unix time)
 sig | string | HMAC-SHA256 signature (will be null if ```IPN callback hash key``` has not been set in the [Merchant Settings](#merchant-settings))
 
 **\* exchange, xamount, xcurrency and xrate are used when ```Automatic exchange to USDZ``` is activated in the [Merchant Settings](#merchant-settings).**
 
-**IMPORTANT 1:** If there was an error during IPN callback, our system would try upto 5 times until it is done successfully and nevertheless there is a tiny chance your system receives more than one IPN callback for the same transaction. Your IPN callback handler must alway watch for duplicate transaction by checking ```zxid``` (ZixiPay transaction id) to avoid double deposit/credit on your side.
+**IMPORTANT 1:** If there was an error during IPN callback, our system would try upto 5 times until it is done successfully and nevertheless there is a tiny chance your system receives more than one IPN callback for the same transaction. Your IPN callback handler must alway watch for duplicate callback by checking ```zxid``` (ZixiPay transaction id) to avoid double deposit/credit on your side.
 
 **IMPORTANT 2:** If the receiving end is behind a firewall, ZixiPay's IP address (185.17.146.83) and TCP port 443 needs to be permitted to pass through.
 
