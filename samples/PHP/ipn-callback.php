@@ -27,6 +27,8 @@ if (isset($ipn_key)) {
     return FALSE;     // do nothing and return false or it could be anything that suites your platform
 }
 
-// here will be the code to do something on your platfrom with the above POST variables  
+// FIRST check if this IS NOT a duplicate callback by making sure no previous transaction has been processed with the same zxid and if it is duplicate then just ignore it
+
+// here will be the code to process the incoming transaction on your platfrom with the above POST variables  
 
 ?>
