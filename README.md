@@ -22,9 +22,7 @@ Name | Description
 [samples/PHP/zixipay-api.php](./samples/PHP/zixipay-api.php)|ZixiPay API, PHP sample code
 [samples/PHP/zixipay-merchant-api.php](./samples/PHP/zixipay-merchant-api.php)|ZixiPay Merchant API, PHP sample code
 [samples/PHP/ipn-callback.php](./samples/PHP/ipn-callback.php)|How to process the IPN callback, PHP sample code
-[samples/JS/zixipay-api.js](./samples/JS/zixipay-api.js)|ZixiPay API, JavaScript sample code
-[samples/JS/zixipay-merchant-api.js](./samples/JS/zixipay-merchant-api.js)|ZixiPay Merchant API, JavaScript sample code
-[samples/JS/ipn-callback.js](./samples/JS/ipn-callback.js)|How to process the IPN callback, JavaScript sample code
+[samples/JS](https://github.com/zixipay/zixipay.github.io/tree/master/samples/JS)|ZixiPay API, JavaScript sample codes
 [samples/Python/zixipay-api.py](./samples/Python/zixipay-api.py)|ZixiPay API, Python sample code
 [samples/Python/zixipay-merchant-api.py](./samples/Python/zixipay-merchant-api.py)|ZixiPay Merchant API, Python sample code
 [assets](./assets/)|ZixiPay image assets
