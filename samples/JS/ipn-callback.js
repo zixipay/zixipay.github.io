@@ -18,7 +18,7 @@ app.post(ipn_url, (req, res) => {
     	delete params.sig;
     	if (sig != crypto.createHmac("sha256", ipn_key).update(querystring.stringify(params)).digest("hex"))
 		// signature does not match: do nothing or it could be anything that suites your platform
-		console.log('Signature does not match');
+		console.log('Signature does not match!');
 	    	return;
     }
 	
