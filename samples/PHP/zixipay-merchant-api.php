@@ -38,10 +38,11 @@ function ZixiPay_ApiCall($endpoint, $params, $apikey) {
 	curl_setopt_array($ch, array(
 		CURLOPT_POST			=> true,
 		CURLOPT_HEADER			=> false,
+		CURLOPT_HTTPHEADER		=> array('Content-Type: application/x-www-form-urlencoded'),
 		CURLOPT_ENCODING		=> 'gzip',
 		CURLOPT_RETURNTRANSFER		=> true,
 		CURLOPT_URL			=> $apiurl . $endpoint,
-		CURLOPT_POSTFIELDS		=> $params
+		CURLOPT_POSTFIELDS		=> http_build_query($params)
 	));
 
 	$result = curl_exec($ch);
