@@ -22,7 +22,7 @@ ZixiPay_ApiCall('getrates', prms, api_key).then((r) => {
  */
 async function ZixiPay_ApiCall(endpoint, params, apikey) {
 	
-	api_url = 'https://api.zixipay.com/apiv2/';   // API endpoint URL
+	api_url = 'https://api.zixipay.com/apiv2/';   // ZixiPay API endpoint URL
 
 	params.sig = crypto.createHmac("sha256", apikey).update(querystring.stringify(params)).digest("hex");
 
