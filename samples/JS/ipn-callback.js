@@ -24,7 +24,7 @@ app.post(ipn_url, (req, res) => {
 	
 	// FIRST check if this IS NOT a duplicate callback by making sure no previous transaction has been processed with the same zxid (ZixiPay transaction id)
 
-	// here will be the code to process the incoming transaction on your platfrom with the above POST variables
+	// here will be the code to process the incoming transaction on your platfrom with the POST variables
 });
 
 app.listen(443, () => console.log(`Started server at http://localhost:8080!`));
