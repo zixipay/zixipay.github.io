@@ -27,5 +27,5 @@ app.post(ipn_url, (req, res) => {
 	// here will be the code to process the incoming transaction on your platfrom with the POST variables
 });
 
-app.listen(443, () => console.log(`Started server at http://localhost:8080!`));
+app.listen(443, () => console.log(`Started server at http://localhost:443!`));
 
