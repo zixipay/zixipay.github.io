@@ -30,7 +30,7 @@
 * All endpoints return a JSON object.
 * All API endpoints are accessible by HTTP `POST` method.
 * For `POST` endpoints, the parameters must be sent as `request body` in urlencoded format.
-* HTTP header `Content-Type` should be explicitly set to `application/x-www-form-urlencoded`. **IMPORTANT:** Some libraries like **cURL** set the `Content-Type` to `application/x-www-form-urlencoded` automatically when doing HTTP POST but others might not and explicitly setting might be required.
+* HTTP header `Content-Type` should be explicitly set to `application/x-www-form-urlencoded`.
 * Parameters may be sent in any order.
 * `gzip` is enabled on all endpoints and is recommended to be used on the client side.
 * All endpoints are authenticated and require 3 mandatory parameters (`uid`, `ts` and `sig`). Details in the [Endpoint security](#endpoints-security) section.
