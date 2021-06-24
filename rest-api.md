@@ -121,11 +121,12 @@ Example of sending a valid signed payload in PHP.
   $curl = curl_init();
   curl_setopt_array($curl, array(
       CURLOPT_HEADER => false,
+      CURLOPT_HTTPHEADER => array('Content-Type: application/x-www-form-urlencoded'),
       CURLOPT_ENCODING => 'gzip',
       CURLOPT_RETURNTRANSFER => true,
       CURLOPT_POST => true,
       CURLOPT_URL => $baseurl . $endpoint,
-      CURLOPT_POSTFIELDS => $params
+      CURLOPT_POSTFIELDS => http_build_query($params)
     ));
   
   $result = curl_exec($curl);
