@@ -6,7 +6,7 @@ var querystring = require('querystring');
 var app = express();
 
 var ipn_key = '';      // enter your IPN callback key here, could be left blank if you don't want a signed IPN callback 
-var ipn_url = '';      // enter your IPN callback url key here 
+var ipn_url = '';      // enter your IPN callback url here
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
