@@ -338,6 +338,11 @@ POST /apiv2/withdraw
 Withdraw any of the supported cryptocurrencies.
 
 This endpoint is used for sending funds to another wallet address on the blockchain.
+<br />
+A successful call to the ```withdraw``` endpoint, will create a pending transaction waiting in queue to be sent on the relevant blockchain which on average takes about 2-3 minutes.
+As soon as the transaction has been successfully sent on the relavant blockchain, the status of the transaction will be changed from **pending** to **processed** and the transaction id/hash will be added to the details of the transaction.
+In order to get the transaction hash/txid, simply call the ```statement``` endpoint with the ZixiPay transaction ID as the filter to get the details of the transaction in about 3 minutes after calling the withdraw endpoint.
+
 
 **Parameters:**
 
