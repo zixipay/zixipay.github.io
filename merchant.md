@@ -112,6 +112,6 @@ sig | string | HMAC-SHA256 signature (will be null if ```IPN callback hash key``
 
 **VERY IMPORTANT:** If there was an error/technical problem during IPN callback, our system would try up to 5 times until it is done successfully and nevertheless there is a tiny chance your system receives more than one IPN callback for the same transaction. Your IPN callback handler must always watch for duplicate callbacks by checking ```zxid``` (ZixiPay transaction id) or a method of your choice to avoid double deposit/credit on your side.
 
-**IMPORTANT 1:** If the receiving end is behind a firewall, ZixiPay's IP address (185.17.146.83) and TCP port 443 needs to be permitted to pass through.
+**IMPORTANT 1:** If the receiving end is behind a firewall, ZixiPay's IP addresses and TCP port 443 needs to be permitted to pass through.
 
 **IMPORTANT 2:** Callback is HTTPS only, so SSL needs to be enabled and valid on the receiving end.
