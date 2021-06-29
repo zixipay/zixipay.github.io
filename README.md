@@ -20,6 +20,6 @@ Name | Description
 [rest-api.md](./rest-api.md) |Complete details of ZixiPay Wallet API
 [merchant-integration.md](./merchant.md) | How to accept crypto payments, ZixiPay Merchant API, Crypto Acquiring
 [samples/PHP](https://github.com/zixipay/zixipay.github.io/tree/master/samples/PHP)|ZixiPay API, PHP sample codes
-[samples/JS](https://github.com/zixipay/zixipay.github.io/tree/master/samples/JS)|ZixiPay API, JavaScript sample codes
+[samples/Javascript](https://github.com/zixipay/zixipay.github.io/tree/master/samples/Javascript)|ZixiPay API, JavaScript sample codes
 [samples/Python](https://github.com/zixipay/zixipay.github.io/tree/master/samples/Python)|ZixiPay API, Python sample codes
 [assets](./assets/)|ZixiPay image assets
