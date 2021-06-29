@@ -9,10 +9,10 @@ callback_key = ''       # Your IPN callback key
 
 @api.route('/zcallback', methods=['POST'])
 def post_callback():
-    if(callback_key is not ''):   # signature is required
+    if(callback_key != ''):   # signature is required
         signature = request.form.get('sig')   # get the signature
         form = urllib.parse.urlencode(request.form).split('&sig')   # remove the signature part
-        payload = (form[0])
+        payload = form[0]
         
         if(signature != hmac.new(bytes(callback_key, 'latin-1'), bytes(payload, 'latin-1'), hashlib.sha256).hexdigest().lower()):
             # do nothing and return false or it could be anything that suites your platform
