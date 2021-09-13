@@ -302,6 +302,7 @@ status | string | NO |Transaction status (pending, processed, cancelled or block
 type | string | NO |Transaction type (deposit, withdrawal, transfer, exchange or payment)
 sender | string | NO |sender, could be user id or email address
 recipient | string | NO |recipient, could be user id, email address or crypto wallet address
+csv | string | NO |generate CSV file instead of JSON output?<br />0: (default) No<br />1: Yes
 uid | string | YES |User ID
 ts | number | YES |Unix time
 sig | string | YES |HMAC-SHA256 signature
@@ -324,7 +325,8 @@ sig | string | YES |HMAC-SHA256 signature
         "sender":"Tether",              // sender
         "recipient":"My Wallet",        // recipient
         "details":"",                   // transaction details
-        "extras":""                     // transaction extra details
+        "extras":"",                    // transaction extra details
+        "merchant_ref":""               // merchant API ref
       }
     ]
   }
