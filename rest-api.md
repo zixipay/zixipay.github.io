@@ -287,7 +287,7 @@ sig | string | YES |HMAC-SHA256 signature
 POST /apiv2/statement
 ```
 
-Get transaction(s) history with optional filters. Maximum number of transactions returned is 500.
+Get transaction(s) history with optional filters. Maximum number of transactions returned is 2000.
 
 **Parameters:**
 
