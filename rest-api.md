@@ -19,6 +19,7 @@
       - [getbalances](#getbalances)
       - [getwallet](#getwallet)
       - [getrates](#getrates)
+      - [getfees](#getfees)
       - [statement](#statement)
     - [Transactional Endpoints](#transactional-endpoints)
       - [withdraw](#withdraw)
@@ -280,6 +281,214 @@ sig | string | YES |HMAC-SHA256 signature
       "rate":"1.00"
     }
   ]
+}
+```
+#### getfees
+```
+POST /apiv2/getfees
+```
+Get all the applicable fees and limits.
+All the retunred ```fee```s are fixed fees in the relevant currency except for the ```exchange``` section which is in percent.
+
+**Parameters:**
+
+
+Name | Type | Mandatory | Description
+------------ | ------------ | ------------ | ------------
+uid | string | YES |User ID
+ts | number | YES |Unix time
+sig | string | YES |HMAC-SHA256 signature
+
+
+**Response:** (Example)
+```javascript
+{
+  "result":"ok",
+  "payload":{
+    "deposit":[
+      {
+        "name":"Zixi Dollar",
+        "symbol":"USDZ",
+        "min_amount":"0.100000000000000000",
+        "max_amount":"0.000000000000000000",
+        "fee":"0.00"
+      },
+      {
+        "name":"Zixi Euro",
+        "symbol":"EURZ",
+        "min_amount":"0.100000000000000000",
+        "max_amount":"0.000000000000000000",
+        "fee":"0.00"
+      },
+      {
+        "name":"Litecoin",
+        "symbol":"LTC",
+        "min_amount":"0.010000000000000000",
+        "max_amount":"0.000000000000000000",
+        "fee":"0.00"
+      },
+      {
+        "name":"Bitcoin",
+        "symbol":"BTC",
+        "min_amount":"0.000100000000000000",
+        "max_amount":"0.000000000000000000",
+        "fee":"0.00"
+      },
+      {
+        "name":"Ethereum",
+        "symbol":"ETH",
+        "min_amount":"0.001000000000000000",
+        "max_amount":"0.000000000000000000",
+        "fee":"0.00"
+      },
+      {
+        "name":"Tether",
+        "symbol":"USDT",
+        "min_amount":"0.100000000000000000",
+        "max_amount":"0.000000000000000000",
+        "fee":"0.00"
+      }
+    ],
+    "withdrawal":[
+      {
+        "name":"Zixi Dollar",
+        "symbol":"USDZ",
+        "min_amount":"0.010000000000000000",
+        "max_amount":"0.000000000000000000",
+        "fee":"1.000000000000000000"
+      },
+      {
+        "name":"Zixi Euro",
+        "symbol":"EURZ",
+        "min_amount":"0.010000000000000000",
+        "max_amount":"0.000000000000000000",
+        "fee":"1.000000000000000000"
+      },
+      {
+        "name":"Litecoin",
+        "symbol":"LTC",
+        "min_amount":"0.001000000000000000",
+        "max_amount":"0.000000000000000000",
+        "fee":"0.001000000000000000"
+      },
+      {
+        "name":"Bitcoin",
+        "symbol":"BTC",
+        "min_amount":"0.000100000000000000",
+        "max_amount":"0.000000000000000000",
+        "fee":"0.000500000000000000"
+      },
+      {
+        "name":"Ethereum",
+        "symbol":"ETH",
+        "min_amount":"0.001000000000000000",
+        "max_amount":"0.000000000000000000",
+        "fee":"0.005000000000000000"
+      },
+      {
+        "name":"Tether-TRC20",
+        "symbol":"USDT",
+        "min_amount":"0.010000000000000000",
+        "max_amount":"0.000000000000000000",
+        "fee":"1.000000000000000000"
+      },
+      {
+        "name":"Tether-ERC20",
+        "symbol":"USDT",
+        "min_amount":"0.010000000000000000",
+        "max_amount":"0.000000000000000000",
+        "fee":"40.000000000000000000"
+      },
+      {
+        "name":"Tether-OMNI",
+        "symbol":"USDT",
+        "min_amount":"0.010000000000000000",
+        "max_amount":"0.000000000000000000",
+        "fee":"30.000000000000000000"
+      }
+    ],
+    "internaltransfer":[
+      {
+        "name":"Zixi Dollar",
+        "symbol":"USDZ",
+        "min_amount":"0.010000000000000000",
+        "max_amount":"0.000000000000000000",
+        "fee":"1.000000000000000000"
+      },
+      {
+        "name":"Zixi Euro",
+        "symbol":"EURZ",
+        "min_amount":"0.010000000000000000",
+        "max_amount":"0.000000000000000000",
+        "fee":"1.000000000000000000"
+      },
+      {
+        "name":"Litecoin",
+        "symbol":"LTC",
+        "min_amount":"0.001000000000000000",
+        "max_amount":"0.000000000000000000",
+        "fee":"0.000100000000000000"
+      },
+      {
+        "name":"Bitcoin",
+        "symbol":"BTC",
+        "min_amount":"0.000100000000000000",
+        "max_amount":"0.000000000000000000",
+        "fee":"0.000100000000000000"
+      },
+      {
+        "name":"Ethereum",
+        "symbol":"ETH",
+        "min_amount":"0.001000000000000000",
+        "max_amount":"0.000000000000000000",
+        "fee":"0.001000000000000000"
+      },
+      {
+        "name":"Tether",
+        "symbol":"USDT",
+        "min_amount":"0.010000000000000000",
+        "max_amount":"0.000000000000000000",
+        "fee":"1.000000000000000000"
+      }
+    ],
+    "exchange":[
+      {
+        "name":"Zixi Euro",
+        "symbol":"EURZ",
+        "min_amount":"1.000000000000000000",
+        "max_amount":"0.000000000000000000",
+        "fee":"1.00"
+      },
+      {
+        "name":"Litecoin",
+        "symbol":"LTC",
+        "min_amount":"0.010000000000000000",
+        "max_amount":"300.000000000000000000",
+        "fee":"2.00"
+      },
+      {
+        "name":"Bitcoin",
+        "symbol":"BTC",
+        "min_amount":"0.000100000000000000",
+        "max_amount":"1.500000000000000000",
+        "fee":"2.00"
+      },
+      {
+        "name":"Ethereum",
+        "symbol":"ETH",
+        "min_amount":"0.001000000000000000",
+        "max_amount":"20.000000000000000000",
+        "fee":"2.00"
+      },
+      {
+        "name":"Tether",
+        "symbol":"USDT",
+        "min_amount":"1.000000000000000000",
+        "max_amount":"100000.000000000000000000",
+        "fee":"1.00"
+      }
+    ]
+  }
 }
 ```
 #### statement
