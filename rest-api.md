@@ -288,7 +288,6 @@ sig | string | YES |HMAC-SHA256 signature
 POST /apiv2/getfees
 ```
 Get all the applicable fees and limits.
-All the retunred ```fee```s are fixed fees in the relevant currency except for the ```exchange``` section which is in percent.
 
 **Parameters:**
 
@@ -299,6 +298,7 @@ uid | string | YES |User ID
 ts | number | YES |Unix time
 sig | string | YES |HMAC-SHA256 signature
 
+**IMPORTANT:** The returned ```fee``` is always in the relevant currency except for the ```exchange``` section which is in percent.
 
 **Response:** (Example)
 ```javascript
