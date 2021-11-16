@@ -300,7 +300,7 @@ sig | string | YES |HMAC-SHA256 signature
 
 **Note 1:** The returned ```fee``` is always in the relevant currency except for the ```exchange``` section which is in percent.
 
-**Note 2:** A return value of **zero** in ```min_amount``` or ```max_amount``` means there is no limlits.
+**Note 2:** A returned value of **zero** in ```min_amount``` or ```max_amount``` means there is no limlits.
 
 **Response:** (Example)
 ```javascript
