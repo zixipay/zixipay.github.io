@@ -6,7 +6,7 @@ Here is how it is done:
 * Login to your ZixiPay Wallet at [https://zixipay.com/login](https://zixipay.com/login)
 * Go to the ```Settings``` menu.
 * Find your ```User ID``` right below the balances, User ID is mandatory in all endpoints calls as ```uid``` parameter.
-* Set the ```API Access Authorized IP``` and save the Settings. This is the IP address your API calls are going to be made from and is mandatory. Endpoint calls will be rejected if no Authorized IP is set or the IP address doesn't match.
+* Set the ```API Access Authorized IP``` and save the Settings. This is the IP address your API calls are going to be made from and is mandatory. A maximum of 3 different IPs can be entered. Endpoint calls will be rejected if no Authorized IP is set or the IP address doesn't match.
 * Enable your wallet's 2FA (Two Factor Authentication) if it has not been enabled before. API Access will not be activated unless your wallets's 2FA is enabled.
 * Click on ```Generate New API Access Key``` to generate a new API Key.
 * Click on ```Show API Access Key``` to get your API Key.
