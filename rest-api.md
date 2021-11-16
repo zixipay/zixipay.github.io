@@ -399,7 +399,7 @@ sig | string | YES |HMAC-SHA256 signature
         "symbol":"USDT",
         "min_amount":"0.010000000000000000",
         "max_amount":"0.000000000000000000",
-        "fee":"40.000000000000000000"
+        "fee":"25.000000000000000000"
       },
       {
         "name":"Tether-OMNI",
