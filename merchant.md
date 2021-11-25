@@ -104,7 +104,7 @@ Name | Type | Mandatory | Description
 ------------ | ------------ | ------------ | ------------
 amount | number | YES |Invoice amount
 currency | string | YES |Any of the supported currencies (USDZ, EURZ, LTC, BTC, ETH or USDT)
-multicurrency | binary | NO |Invoice can be paid with any of the supported cryptocurrencies<br />0: (default) No. Invoice can only be paid by the invoice currency<br />1: Yes. Only available when the invoice currency is USDZ
+multicurrency | binary | NO |Can the invoice be paid by any of the supported cryptocurrencies?<br />0: (default) No. Invoice can only be paid by the invoice currency<br />1: Yes. Only available when the invoice currency is USDZ
 validity | number | NO |The invoice validity in minutes. 0 (default) means the invoice will never expire
 ref | string | YES |A reference tag to this invoice (depeneding on the usage this could be an invoice number, account number, userid, username, email address or any other kind of unique reference in your platform)
 uid | string | YES |ZixiPay User ID
