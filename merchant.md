@@ -21,6 +21,7 @@ How to set up and activate the ZixiPay Merchant API:
 * Login to your ZixiPay Wallet at [https://zixipay.com/login](https://zixipay.com/login)
 * Go to the ```Merchants``` menu. If your wallet account is not verified, you willl be asked to verify your account.
 * ```Website URL``` is the website the payment acceptance service is going to be used for.
+* ```Logo URL``` is the URL to the merchant's logo file to be used in the invoices.
 * ```Category``` is the most relevant business category the website fits in.
 * ```IPN Callback URL``` needs to be set only if a callback payment notification is required for each payment. If left empty, no callback will be done. 
 * ```IPN callback hash key``` is the key to be used to sign the payment callback with ```HMAC-SHA256```. If left empty, callback will not be signed.
