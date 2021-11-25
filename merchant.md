@@ -104,45 +104,17 @@ Name | Type | Mandatory | Description
 ------------ | ------------ | ------------ | ------------
 amount | number | YES |Invoice amount
 currency | string | YES |Any of the supported currencies (USDZ, EURZ, LTC, BTC, ETH or USDT)
-multicurrency | binary | NO |If the invoice can be paid if any of the supported cryptos. Default is 
-validity | number | NO |The invoice is valid for how many minutes. If 0 (default) the invoice will never expire
+multicurrency | binary | NO |If the invoice can be paid with any of the supported cryptocurrencies
+validity | number | NO |The invoice validity in minutes. If 0 (default) the invoice will never expire
 ref | string | YES |A reference tag to this invoice (depeneding on the usage this could be an invoice number, account number, userid, username, email address or any other kind of unique reference in your platform)
 uid | string | YES |ZixiPay User ID
 ts | number | YES |Unix time
 sig | string | YES |HMAC-SHA256 signature
 
 
-**IMPORTANT:** Calls to this endpoint with the same ```ref``` tag would return the same wallet address. This is useful when you need to have persistant wallet address for each client/account in your platform.
-
 
 **Response:** (Example)
 ```javascript
-{
-  "result":"ok",
-  "payload":[
-    {
-      "name":"Tether TRC20",   // currency name
-      "code":"USDT",          // currency symbol
-      "address":"TH53ejapLDKDFxxqP2RREfxCNtW26gFKeb", // wallet address
-      "qr-code":"https://qrg.zixipay.com/api/qr.php?data=TH53ejapLDKDFxxqP2RREfxCNtW26gFKeb", // QR-Code of the address
-      "confirm":20             // number of confirmations required
-    },
-    {
-      "name":"Tether ERC20",
-      "code":"USDT",
-      "address":"0x0ed8991afc868c45ffbcd4afdf7ebc273cf38ed2",
-      "qr-code":"https://qrg.zixipay.com/api/qr.php?data=0x0ed8991afc868c45ffbcd4afdf7ebc273cf38ed2",
-      "confirm":3
-    },
-    {
-      "name":"Tether OMNI",
-      "code":"USDT",
-      "address":"1PkYiGCF3zVif5vm1ogXYuvtGaK3p7qLgK",
-      "qr-code":"https://qrg.zixipay.com/api/qr.php?data=1PkYiGCF3zVif5vm1ogXYuvtGaK3p7qLgK",
-      "confirm":1
-    }
-  ]
-}
 ```
 
 **QR-Code:** Calls to this endpoint returns a URL for the ```qr-code``` of the wallet address which could be easily used in the ```<img>``` HTML tag as its ```src```.
