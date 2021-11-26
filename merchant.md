@@ -151,7 +151,7 @@ zxid | string | ZixiPay transaction id
 time | number | Transaction time (Unix time)
 sig | string | HMAC-SHA256 signature (will be null if ```IPN callback hash key``` has not been set in the [Merchant Settings](#merchant-settings))
 
-**\* exchange, xamount, xcurrency and xrate are used when ```Automatic exchange to USDZ``` is activated in the [Merchant Settings](#merchant-settings).**
+**\* exchange, xamount, xcurrency and xrate are used when ```Automatic exchange to USDZ``` is activated in the [Merchant Settings](#merchant-settings) or this was an invoice payment with active ```multicurrency```.**
 
 **VERY IMPORTANT:** If there was an error/technical problem during IPN callback, our system would try up to 5 times until it is done successfully and nevertheless there is a tiny chance your system receives more than one IPN callback for the same transaction. Your IPN callback handler must always watch for duplicate callbacks by checking ```zxid``` (ZixiPay transaction id) or a method of your choice to avoid double deposit/credit on your side.
 
