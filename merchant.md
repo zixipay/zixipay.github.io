@@ -137,7 +137,7 @@ If the IPN Callback URL is set in the Merchant settings, upon receiving funds in
 Name | Type | Description
 ------------ | ------------ | ------------
 ref | string |reference tag to this payment wallet
-invoice | string |the invoice_id that has been generated using ```createinvoice``` API endpoint, null if it is not an invoice payment.
+invoice | string |receiving ```invoice_id``` if this an invoive payment, null if it is not an invoice payment.
 wallet | string |receiving wallet address that has been generated using ```getpaymentwallet``` API endpoint.
 amount|number| amount of the incoming payment
 fee|number|merchant API processing fee + the exhange fee if the auto-exchange to USDZ has been enabled.
