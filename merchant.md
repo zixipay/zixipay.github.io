@@ -138,7 +138,7 @@ Name | Type | Description
 ------------ | ------------ | ------------
 ref | string |reference tag to this payment wallet
 invoice | string |receiving ```invoice_id``` if this an invoive payment, null if it is not an invoice payment.
-wallet | string |receiving wallet address that has been generated using ```getpaymentwallet``` API endpoint.
+wallet | string |receiving wallet address.
 amount|number| amount of the incoming payment
 fee|number|merchant API processing fee + the exhange fee if the auto-exchange to USDZ has been enabled.
 currency | string | any of the supported currencies (USDZ, EURZ, LTC, BTC, ETH or USDT)
