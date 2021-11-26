@@ -111,7 +111,7 @@ uid | string | YES |ZixiPay User ID
 ts | number | YES |Unix time
 sig | string | YES |HMAC-SHA256 signature
 
-Calls to this endpoint returns, a unique```invoice_id```. URL to see the invoice and URL of the QR-Code of the invoice URL will returned as well.
+Calls to this endpoint returns a unique ```invoice_id``` plus the invoice URL and URL of the QR-Code of the invoice URL will returned as well.
 
 
 **Response:** (Example)
