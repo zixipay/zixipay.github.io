@@ -111,15 +111,20 @@ uid | string | YES |ZixiPay User ID
 ts | number | YES |Unix time
 sig | string | YES |HMAC-SHA256 signature
 
+Calls to this endpoint returns, a unique```invoice_id```. URL to see the invoice and URL of the QR-Code of the invoice URL will returned as well.
 
 
 **Response:** (Example)
 ```javascript
+{
+  "result":"ok",
+  "payload":{
+    "invoice_id":"RC38OQ2NXJQ77GSSU7R728BUHSOLNK",
+    "invoice_url":"https://zixipay.com/invoice?id=RC38OQ2NXJQ77GSSU7R728BUHSOLNK",
+    "invoice_url_qrcode":"https://qrg.zixipay.com/api/qr.php?data=https://zixipay.com/invoice?id=RC38OQ2NXJQ77GSSU7R728BUHSOLNK"
+  }
+}
 ```
-
-**QR-Code:** Calls to this endpoint returns a URL for the ```qr-code``` of the wallet address which could be easily used in the ```<img>``` HTML tag as its ```src```.
-
-
 
 ---
 
