@@ -104,7 +104,7 @@ Name | Type | Mandatory | Description
 ------------ | ------------ | ------------ | ------------
 amount | number | YES |Invoice amount
 currency | string | YES |Any of the supported currencies (USDZ, EURZ, LTC, BTC, ETH or USDT)
-multicurrency | binary | NO |Can the invoice be paid by any of the supported cryptocurrencies?<br />0: (default) No. Invoice can only be paid by the invoice currency<br />1: Yes. Only available when the invoice currency is USDZ
+multicurrency | binary | NO |Can the invoice be paid by any of the supported cryptocurrencies?<br />0: Disabled (default). Invoice can only be paid by the invoice currency<br />1: Enabled. Only available when the invoice currency is USDZ
 validity | number | NO |The invoice validity in minutes. 0 (default) means the invoice will never expire
 ref | string | YES |A reference tag to this invoice (depeneding on the usage this could be an invoice number, account number, userid, username, email address or any other kind of unique reference in your platform)
 uid | string | YES |ZixiPay User ID
@@ -151,7 +151,7 @@ zxid | string | ZixiPay transaction id
 time | number | Transaction time (Unix time)
 sig | string | HMAC-SHA256 signature (will be null if ```IPN callback hash key``` has not been set in the [Merchant Settings](#merchant-settings))
 
-**\* exchange, xamount, xcurrency and xrate are used when ```Automatic exchange to USDZ``` is activated in the [Merchant Settings](#merchant-settings) or this was an invoice payment with active ```multicurrency```.**
+**\* exchange, xamount, xcurrency and xrate are used when ```Automatic exchange to USDZ``` is activated in the [Merchant Settings](#merchant-settings) or this was an invoice payment with enabled ```multicurrency```.**
 
 **VERY IMPORTANT:** If there was an error/technical problem during IPN callback, our system would try up to 5 times until it is done successfully and nevertheless there is a tiny chance your system receives more than one IPN callback for the same transaction. Your IPN callback handler must always watch for duplicate callbacks by checking ```zxid``` (ZixiPay transaction id) or a method of your choice to avoid double deposit/credit on your side.
 
