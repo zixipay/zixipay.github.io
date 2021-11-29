@@ -189,7 +189,7 @@ sig | string | YES |HMAC-SHA256 signature
 ```
 POST /apiv2/listinvoices
 ```
-Get all the invoices. There are optional filters which can be used to narrow down the search.
+Get all the invoices. Optional filters which could be used to narrow down the search.
 
 **Parameters:**
 
@@ -197,7 +197,7 @@ Get all the invoices. There are optional filters which can be used to narrow dow
 Name | Type | Mandatory | Description
 ------------ | ------------ | ------------ | ------------
 invoice_id | string | NO |The ```invoice_id``` of the invoice
-ref | string | NO |Reference tag to this invoice
+ref | string | NO |Reference tag to the invoice
 datefrom | string | NO |From this issue date (YYYY-MM-DD)
 dateto | string | NO |To this issue date (YYYY-MM-DD)
 currency | string | NO |Invoice currency (USDZ, EURZ, LTC, BTC, ETH or USDT)
