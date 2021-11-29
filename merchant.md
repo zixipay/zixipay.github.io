@@ -137,7 +137,7 @@ Cancel a payment invoice.
 
 Name | Type | Mandatory | Description
 ------------ | ------------ | ------------ | ------------
-invoice_id | string | YES |The ```invoice_id``` of the inoice to be cancelled
+invoice_id | string | YES |The ```invoice_id``` of the invoice to be cancelled
 uid | string | YES |ZixiPay User ID
 ts | number | YES |Unix time
 sig | string | YES |HMAC-SHA256 signature
