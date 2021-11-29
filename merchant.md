@@ -151,6 +151,40 @@ sig | string | YES |HMAC-SHA256 signature
 }
 ```
 
+#### getinvoice
+```
+POST /apiv2/getinvoice
+```
+Get an invoice details.
+
+**Parameters:**
+
+
+Name | Type | Mandatory | Description
+------------ | ------------ | ------------ | ------------
+invoice_id | string | YES |The ```invoice_id``` of the invoice
+uid | string | YES |ZixiPay User ID
+ts | number | YES |Unix time
+sig | string | YES |HMAC-SHA256 signature
+
+
+**Response:** (Example)
+```javascript
+{
+  "result":"ok",
+  "payload":{
+    "invoice_id":"RC38OQ2NXJQ77GSSU7R728BUHSOLNK",
+    "amount":"0.40000000",
+    "currency":"BTC",
+    "date":"2021-11-20 10:14:26",
+    "status":"pending",
+    "ref":"some1random2ref",
+    "accept_multi":"0",
+    "validity":"1000"
+  }
+}
+```
+
 ---
 
 ### IPN Callback Parameters
