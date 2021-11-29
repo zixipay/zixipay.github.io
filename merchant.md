@@ -189,7 +189,7 @@ sig | string | YES |HMAC-SHA256 signature
 ```
 POST /apiv2/listinvoices
 ```
-Get all the invoices. Optional filters which could be used to narrow down the search.
+Get all the invoices. Optional filters could be used to narrow down the search.
 
 **Parameters:**
 
