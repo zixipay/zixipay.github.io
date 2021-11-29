@@ -126,6 +126,31 @@ Calls to this endpoint returns a unique ```invoice_id``` plus the invoice URL an
 }
 ```
 
+#### cancelinvoice
+```
+POST /apiv2/cancelinvoice
+```
+Cancel a payment invoice.
+
+**Parameters:**
+
+
+Name | Type | Mandatory | Description
+------------ | ------------ | ------------ | ------------
+invoice_id | string | YES |The ```invoice_id``` of the inoice to be cancelled
+uid | string | YES |ZixiPay User ID
+ts | number | YES |Unix time
+sig | string | YES |HMAC-SHA256 signature
+
+
+**Response:** (Example)
+```javascript
+{
+  "result":"ok",
+  "payload":"invoice cancelled successfully"
+}
+```
+
 ---
 
 ### IPN Callback Parameters
