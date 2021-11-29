@@ -177,10 +177,54 @@ sig | string | YES |HMAC-SHA256 signature
     "amount":"0.40000000",
     "currency":"BTC",
     "date":"2021-11-20 10:14:26",
-    "status":"pending",
+    "status":"paid",
     "ref":"some1random2ref",
     "accept_multi":"0",
     "validity":"1000"
+  }
+}
+```
+
+#### listinvoices
+```
+POST /apiv2/listinvoices
+```
+Get all the invoices. There are optional filters which can be used to narrow down the search.
+
+**Parameters:**
+
+
+Name | Type | Mandatory | Description
+------------ | ------------ | ------------ | ------------
+invoice_id | string | NO |The ```invoice_id``` of the invoice
+ref | string | NO |Reference tag to this invoice
+datefrom | string | NO |From this issue date (YYYY-MM-DD)
+dateto | string | NO |To this issue date (YYYY-MM-DD)
+currency | string | NO |Invoice currency (USDZ, EURZ, LTC, BTC, ETH or USDT)
+status | string | NO |Invoice status (paid, pending or cancelled)
+uid | string | YES |ZixiPay User ID
+ts | number | YES |Unix time
+sig | string | YES |HMAC-SHA256 signature
+
+
+**Response:** (Example)
+```javascript
+{
+  "result":"ok",
+  "payload":{
+    "records":1,
+    "invoices":[
+      {
+        "invoice_id":"RC38OQ2NXJQ77GSSU7R728BUHSOLNK",
+        "amount":"0.40000000",
+        "currency":"BTC",
+        "date":"2021-11-20 10:14:26",
+        "status":"paid",
+        "ref":"some1random2ref",
+        "accept_multi":"0",
+        "validity":"1000"
+      }
+    ]
   }
 }
 ```
