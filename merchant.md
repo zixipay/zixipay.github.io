@@ -19,7 +19,7 @@ ZixiPay Merchant API alllows accepting crypto payments with an automated payment
 * All the merchant API endpoints are accessible only if your [ZixiPay](https://zixipay.com/) wallet is verified and the [Merchant Setting](#merchant-settings) are set and active.
 * ZixiPay Merchant API provides two methods of integration with the client's platfrom:
   * Self served total integration: using ZixiPay as Wallet as a Service ([getpaymentwallet](#getpaymentwallet) endpoint)
-  * Invoicing: issuing invoices and letting ZixiPay handle the UI and payment ([createinvoice](#createinvoice) endpoint)
+  * Invoicing: issuing invoices and letting ZixiPay handle the UI and payment ([createinvoice](#createinvoice) endpoint) ([SAMPLE INVOICE])(https://zixipay.com/invoice?id=51NLE7RW780YR55YU3RULNZYMSPUE8)
 
 ## Merchant Settings
 
