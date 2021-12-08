@@ -32,7 +32,7 @@ How to set up and activate the ZixiPay Merchant API:
 * ```Category``` is the most relevant business category the website fits in.
 * ```IPN Callback URL``` needs to be set only if a callback payment notification is required for each payment. If left empty, no callback will be done. 
 * ```IPN callback hash key``` is the key to be used to sign the payment callback with ```HMAC-SHA256```. If left empty, callback will not be signed.
-* ```Automatic exchange to USDZ``` if enabled, all incoming payments in other currencies will be automatically exchanged to and deposited in USDZ. **This option completely secures the merchant from crypto price fluctuation.**
+* ```Automatic exchange to USDZ``` if enabled, all incoming payments in other currencies will be automatically exchanged to and deposited in USDZ. **This option completely protects the merchant from crypto price fluctuation.**
 
 
 ## API Endpoints
