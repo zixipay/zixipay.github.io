@@ -16,7 +16,7 @@
 ZixiPay Merchant API alllows accepting crypto payments with an automated payment notification callback function. Merchant API could be integrated and utilized in all kind of use cases such as invoice payments, wallet services, e-commerce, exchange services, etc.
 
 * All [General API Information](./rest-api.md#general-api-information), [Endpoints Limit](./rest-api.md#endpoints-limit) and [Endpoints security](./rest-api.md#endpoints-security) are valid and applies.
-* All the merchant API endpoints are accessible only if your <a href="https://zixipay.com" target="_blank">ZixiPay</a> wallet is verified and the [Merchant Setting](#merchant-settings) are set and active.
+* All the merchant API endpoints are accessible only if your [ZixiPay](https://zixipay.com") wallet is verified and the [Merchant Setting](#merchant-settings) are set and active.
 * ZixiPay Merchant API provides two methods of integration with the client's platfrom:
   * Self served total integration: using ZixiPay as Wallet as a Service ([getpaymentwallet](#getpaymentwallet) endpoint)
   * Invoicing: issuing invoices and letting ZixiPay handle the UI and payment ([createinvoice](#createinvoice) endpoint)
