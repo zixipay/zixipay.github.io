@@ -113,6 +113,8 @@ sig | string | YES |HMAC-SHA256 signature
 
 Calls to this endpoint returns a unique ```invoice_id``` plus the invoice URL and URL of the QR-Code of the invoice URL will returned as well.
 
+**IMPORTANT:** Invoices with validity will be cancelled automatically when the validity period is expired.
+
 
 **Response:** (Example)
 ```javascript
