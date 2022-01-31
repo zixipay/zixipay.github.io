@@ -105,7 +105,7 @@ Name | Type | Mandatory | Description
 amount | number | YES |Invoice amount
 currency | string | YES |Any of the supported currencies (USDZ, EURZ, LTC, BTC, ETH or USDT)
 multicurrency | binary | NO |Can the invoice be paid by any of the supported cryptocurrencies?<br />0: Disabled (default). Invoice can only be paid by the invoice currency<br />1: Enabled. Available when the invoice currency is USDZ
-validity | number | NO |The invoice validity in minutes. 0 (default) means the invoice will be valid for 10 days
+validity | number | NO |The invoice validity in minutes. 0 (default) means the invoice will be valid for 7 days
 ref | string | YES |A reference tag to this invoice (depeneding on the usage this could be an invoice number, account number, userid, username, email address or any other kind of unique reference in your platform)
 uid | string | YES |ZixiPay User ID
 ts | number | YES |Unix time
@@ -113,7 +113,7 @@ sig | string | YES |HMAC-SHA256 signature
 
 Calls to this endpoint returns a unique ```invoice_id``` plus the invoice URL and URL of the QR-Code of the invoice URL will returned as well.
 
-**IMPORTANT:** Invoices will be cancelled automatically when the validity period is expired. Cancelled invoices will be deleted after one week.
+**IMPORTANT:** Invoices will be cancelled automatically when the validity period is expired. Cancelled invoices will be deleted after one day.
 
 
 **Response:** (Example)
