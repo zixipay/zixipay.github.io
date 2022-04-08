@@ -26,13 +26,13 @@ if ($ipnkey) {
 $ch = curl_init();
 
 curl_setopt_array($ch, array(
-		CURLOPT_CONNECTTIMEOUT		=> 3,
-		CURLOPT_TIMEOUT				=> 5,
+		CURLOPT_CONNECTTIMEOUT	    => 3,
+		CURLOPT_TIMEOUT		    => 5,
 		CURLOPT_POST                => true,
 		CURLOPT_HEADER              => false,
-		CURLOPT_HTTPHEADER			=> array('Content-Type: application/x-www-form-urlencoded'),
+		CURLOPT_HTTPHEADER	    => array('Content-Type: application/x-www-form-urlencoded'),
 		CURLOPT_ENCODING            => '',
-		CURLOPT_URL					=> $callbackurl,
+		CURLOPT_URL		    => $callbackurl,
 		CURLOPT_POSTFIELDS          => http_build_query($ipnparams)
 ));
 
