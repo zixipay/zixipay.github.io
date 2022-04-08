@@ -272,4 +272,4 @@ sig | string | HMAC-SHA256 signature (will be null if ```IPN callback hash key``
 **VERY IMPORTANT:** If there was an error/technical problem during IPN callback, our system would try up to 10 times until it is done successfully and nevertheless there is a tiny chance your system receives more than one IPN callback for the same transaction. The IPN callback handler must always watch for duplicate callbacks by checking ```zxid``` (ZixiPay transaction id) or a method of your choice to avoid double deposits/credits on your side.
 
 
-**Sample code has been provided to simulate the call back in the [samples folder](#../samples)**
+**Sample code has been provided to simulate the call back in the [samples folder](#samples/)**
