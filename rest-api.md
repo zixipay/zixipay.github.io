@@ -198,7 +198,7 @@ Get the wallet address of a specific currency.
 
 Name | Type | Mandatory | Description
 ------------ | ------------ | ------------ | ------------
-currency | string | YES |Any of the supported currencies (USDZ, EURZ, LTC, BTC, ETH or USDT)
+currency | string | YES |Any of the supported currencies (USDZ, EURZ, LTC, BTC, ETH, TRX, USDC or USDT)
 uid | string | YES |User ID
 ts | number | YES |Unix time
 sig | string | YES |HMAC-SHA256 signature
@@ -219,12 +219,6 @@ sig | string | YES |HMAC-SHA256 signature
       "code":"USDT",
       "address":"0x0ed8991afc868c45ffbcd4afdf7ebc273cf38ed2",
       "confirm":3
-    },
-    {
-      "name":"Tether OMNI",
-      "code":"USDT",
-      "address":"1PkYiGCF3zVif5vm1ogXYuvtGaK3p7qLgK",
-      "confirm":1             //
     }
   ]
 }
@@ -508,7 +502,7 @@ Name | Type | Mandatory | Description
 txid | string | NO |ZixiPay transaction ID
 timefrom | string | NO |from date in YYYY-MM-DD format
 timeto | string | NO |to date in YYYY-MM-DD format
-currency | string | NO |Any of the supported currencies (USDZ, EURZ, LTC, BTC, ETH or USDT)
+currency | string | NO |Any of the supported currencies (USDZ, EURZ, LTC, BTC, ETH, TRX, USDC or USDT)
 status | string | NO |Transaction status (pending, processed, cancelled or blocked)
 type | string | NO |Transaction type (deposit, withdrawal, transfer, exchange or payment)
 sender | string | NO |sender, could be user id or email address
@@ -562,8 +556,8 @@ In order to get the transaction hash/txid, simply call the ```statement``` endpo
 Name | Type | Mandatory | Description
 ------------ | ------------ | ------------ | ------------
 amount | decimal | YES | amount to be withdrawn
-currency | string | YES |Any of the supported currencies (USDZ, EURZ, LTC, BTC, ETH or USDT)
-recipient | string | YES | recipient's wallet address (for USDT withdrawal: TRC20, ERC20 or OMNI addresses are acceptable)
+currency | string | YES |Any of the supported currencies (USDZ, EURZ, LTC, BTC, ETH, TRX, USDC or USDT)
+recipient | string | YES | recipient's wallet address (for USDT withdrawal: TRC20 or ERC20 addresses are acceptable)
 feein | binary | NO | fee inclusive, deduct the fee from the withdrawal amount<br />0: (default) don't deduct the fee from the withdrawal amount<br />1: deduct the fee from the withdrawal amount
 uid | string | YES |User ID
 ts | number | YES |Unix time
@@ -603,7 +597,7 @@ This endpoint is used for transferring funds to another ZixiPay wallet holder in
 Name | Type | Mandatory | Description
 ------------ | ------------ | ------------ | ------------
 amount | decimal | YES | amount to be transferred
-currency | string | YES |Any of the supported currencies (USDZ, EURZ, LTC, BTC, ETH or USDT)
+currency | string | YES |Any of the supported currencies (USDZ, EURZ, LTC, BTC, ETH, TRX, USDC or USDT)
 recipient | string | YES | recipient's email address or user id
 note | string | NO | internal comment for the transfer (optional)
 passcode | number | NO | 4 digit pin if the transfer needs to be passcode protected (optional)
@@ -647,8 +641,8 @@ This endpoint is used for exchanging funds between USDZ and other currencies.
 Name | Type | Mandatory | Description
 ------------ | ------------ | ------------ | ------------
 amount | decimal | YES | amount to be exchanged
-from | string | YES | from currency, any of the supported currencies (USDZ, EURZ, LTC, BTC, ETH or USDT)
-to | string | YES | to currency, any of the supported currencies (USDZ, EURZ, LTC, BTC, ETH or USDT)
+from | string | YES | from currency, any of the supported currencies (USDZ, EURZ, LTC, BTC, ETH, TRX, USDC or USDT)
+to | string | YES | to currency, any of the supported currencies (USDZ, EURZ, LTC, BTC, ETH, TRX, USDC or USDT)
 feein | binary | NO | fee inclusive, deduct the fee from the exchange amount<br />0: (default) don't deduct the fee from the exchange amount<br />1: deduct the fee from the exchange amount
 uid | string | YES |User ID
 ts | number | YES |Unix time
