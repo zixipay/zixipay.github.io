@@ -1,6 +1,6 @@
 # Official Documentation for the ZixiPay Wallet APIs
 
-[ZixiPay Wallet](https://zixipay.com/) is one the most secure and easy to use wallet platforms supporting Bitcoin, Ethereum, Litecoin and Tether on TRC20, ERC20 and OMNI.
+[ZixiPay Wallet](https://zixipay.com/) is one the most secure and easy to use wallet platforms supporting Bitcoin, Ethereum, Litecoin, Tron, Tether on TRC20/ERC20 and USD Coin on TRC20/ERC20.
 
 [Bitcoin Wallet API](https://zixipay.com/), [Ethereum Wallet API](https://zixipay.com/), [Litecoin Wallet API](https://zixipay.com/), [Tether Wallet API](https://zixipay.com/).
 
