@@ -49,7 +49,7 @@ This endpoint returns a new wallet address everytime it is called.
 
 Name | Type | Mandatory | Description
 ------------ | ------------ | ------------ | ------------
-currency | string | YES |Any of the supported currencies (USDZ, EURZ, LTC, BTC, ETH or USDT)
+currency | string | YES |Any of the supported currencies (USDZ, EURZ, LTC, BTC, ETH, TRX, USDC or USDT)
 ref | string | YES |A reference tag to this payment wallet (depeneding on the usage this could be an invoice number, account number, userid, username, email address or any other kind of unique reference in your platform)
 uid | string | YES |ZixiPay User ID
 ts | number | YES |Unix time
@@ -77,13 +77,6 @@ sig | string | YES |HMAC-SHA256 signature
       "address":"0x0ed8991afc868c45ffbcd4afdf7ebc273cf38ed2",
       "qr-code":"https://qrg.zixipay.com/api/qr.php?data=0x0ed8991afc868c45ffbcd4afdf7ebc273cf38ed2",
       "confirm":3
-    },
-    {
-      "name":"Tether OMNI",
-      "code":"USDT",
-      "address":"1PkYiGCF3zVif5vm1ogXYuvtGaK3p7qLgK",
-      "qr-code":"https://qrg.zixipay.com/api/qr.php?data=1PkYiGCF3zVif5vm1ogXYuvtGaK3p7qLgK",
-      "confirm":1
     }
   ]
 }
@@ -103,7 +96,7 @@ Create a payment invoice.
 Name | Type | Mandatory | Description
 ------------ | ------------ | ------------ | ------------
 amount | number | YES |Invoice amount
-currency | string | YES |Any of the supported currencies (USDZ, EURZ, LTC, BTC, ETH or USDT)
+currency | string | YES |Any of the supported currencies (USDZ, EURZ, LTC, BTC, ETH, TRX, USDC or USDT)
 multicurrency | binary | NO |Can the invoice be paid by any of the supported cryptocurrencies?<br />0: Disabled (default). Invoice can only be paid by the invoice currency<br />1: Enabled. Available when the invoice currency is USDZ
 validity | number | NO |The invoice validity in minutes. 0 (default) means the invoice will be valid for 7 days
 ref | string | YES |A reference tag to this invoice (depeneding on the usage this could be an invoice number, account number, userid, username, email address or any other kind of unique reference in your platform)
@@ -203,7 +196,7 @@ invoice_id | string | NO |The ```invoice_id``` of the invoice
 ref | string | NO |Reference tag to the invoice
 datefrom | string | NO |From this issue date (YYYY-MM-DD)
 dateto | string | NO |To this issue date (YYYY-MM-DD)
-currency | string | NO |Invoice currency (USDZ, EURZ, LTC, BTC, ETH or USDT)
+currency | string | NO |Invoice currency (USDZ, EURZ, LTC, BTC, ETH, TRX, USDC or USDT)
 status | string | NO |Invoice status (paid, pending or cancelled)
 uid | string | YES |ZixiPay User ID
 ts | number | YES |Unix time
@@ -247,7 +240,7 @@ invoice | string |receiving ```invoice_id``` if this an invoive payment, null if
 wallet | string |receiving wallet address.
 amount|number| amount of the incoming payment
 fee|number|merchant API processing fee + the exhange fee if the auto-exchange to USDZ has been enabled.
-currency | string | any of the supported currencies (USDZ, EURZ, LTC, BTC, ETH or USDT)
+currency | string | any of the supported currencies (USDZ, EURZ, LTC, BTC, ETH, TRX, USDC or USDT)
 exchange<sup>*</sup> | binary | 0: if auto-echange to USDZ has NOT been done.<br />1: if auto-exchange to USDZ has been done.
 xamount<sup>*</sup> | number | actual incoming payment amount if auto-exchange to USDZ has been done, null otherwise.
 xcurrency<sup>*</sup> | string | actual incoming currency if auto-exchange to USDZ has been done, null otherwise.
