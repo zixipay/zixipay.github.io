@@ -550,7 +550,7 @@ Name | Type | Mandatory | Description
 ------------ | ------------ | ------------ | ------------
 amount | decimal | YES | amount to be withdrawn
 currency | string | YES |Any of the supported currencies (USDZ, EURZ, LTC, BTC, ETH, TRX, USDC or USDT)
-recipient | string | YES | recipient's wallet address (for USDT withdrawal: TRC20 or ERC20 addresses are acceptable)
+recipient | string | YES | recipient's wallet address (for USDT/USDC withdrawal: TRC20 or ERC20 addresses are acceptable)
 feein | binary | NO | fee inclusive, deduct the fee from the withdrawal amount<br />0: (default) don't deduct the fee from the withdrawal amount<br />1: deduct the fee from the withdrawal amount
 uid | string | YES |User ID
 ts | number | YES |Unix time
