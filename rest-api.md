@@ -153,36 +153,46 @@ sig | string | YES |HMAC-SHA256 signature
 ```javascript
 {
   "result":"ok",
-  "payload":[           // array of wallets
+  "payload":[
     {
-      "name":"Zixi Dollar",     // currency name
-      "code":"USDZ",            // currency symbol
-      "balance":"0.00"          // available balance
+      "name":"Zixi Dollar",
+      "code":"USDZ",
+      "balance":"980326.02"
     },
     {
       "name":"Zixi Euro",
       "code":"EURZ",
-      "balance":"0.00"
-    },
-    {
-      "name":"Litecoin",
-      "code":"LTC",
-      "balance":"0.00000000"
+      "balance":"500099.00"
     },
     {
       "name":"Bitcoin",
       "code":"BTC",
-      "balance":"0.00000000"
+      "balance":"142.50249196"
     },
     {
       "name":"Ethereum",
       "code":"ETH",
-      "balance":"0.00000000"
+      "balance":"634.07842095"
+    },
+    {
+      "name":"Litecoin",
+      "code":"LTC",
+      "balance":"3642.96052382"
+    },
+    {
+      "name":"Tron",
+      "code":"TRX",
+      "balance":"9993266.93"
+    },
+    {
+      "name":"USD Coin",
+      "code":"USDC",
+      "balance":"5019973.99"
     },
     {
       "name":"Tether",
       "code":"USDT",
-      "balance":"0.00"
+      "balance":"13679689.56"
     }
   ]
 }
