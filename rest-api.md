@@ -253,31 +253,41 @@ sig | string | YES |HMAC-SHA256 signature
 ```javascript
 {
   "result":"ok",
-  "payload":[         // array of currencies
+  "payload":[
     {
-      "code":"USDZ",    // currency code
-      "decimal":"2",    // number of decimal digits
-      "rate":"1.00"     // exchange rate
+      "code":"USDZ",
+      "decimal":"2",
+      "rate":"1.00"
     },
     {
       "code":"EURZ",
       "decimal":"2",
-      "rate":"1.09"
-    },
-    {
-      "code":"LTC",
-      "decimal":"8",
-      "rate":"43.71"
+      "rate":"0.97"
     },
     {
       "code":"BTC",
       "decimal":"8",
-      "rate":"7239.00"
+      "rate":"19400.91"
     },
     {
       "code":"ETH",
       "decimal":"8",
-      "rate":"183.91"
+      "rate":"1316.93"
+    },
+    {
+      "code":"LTC",
+      "decimal":"8",
+      "rate":"54.13"
+    },
+    {
+      "code":"TRX",
+      "decimal":"2",
+      "rate":"0.064"
+    },
+    {
+      "code":"USDC",
+      "decimal":"2",
+      "rate":"1.00"
     },
     {
       "code":"USDT",
