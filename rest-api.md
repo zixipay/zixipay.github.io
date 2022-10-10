@@ -305,175 +305,238 @@ sig | string | YES |HMAC-SHA256 signature
       {
         "name":"Zixi Dollar",
         "symbol":"USDZ",
-        "min_amount":"0.100000000000000000",
-        "max_amount":"0.000000000000000000",
-        "fee":"0.00"
+        "min_amount":0.1,
+        "max_amount":0,
+        "fee":0
       },
       {
         "name":"Zixi Euro",
         "symbol":"EURZ",
-        "min_amount":"0.100000000000000000",
-        "max_amount":"0.000000000000000000",
-        "fee":"0.00"
-      },
-      {
-        "name":"Litecoin",
-        "symbol":"LTC",
-        "min_amount":"0.010000000000000000",
-        "max_amount":"0.000000000000000000",
-        "fee":"0.00"
+        "min_amount":0.1,
+        "max_amount":0,
+        "fee":0
       },
       {
         "name":"Bitcoin",
         "symbol":"BTC",
-        "min_amount":"0.000100000000000000",
-        "max_amount":"0.000000000000000000",
-        "fee":"0.00"
+        "min_amount":0.0001,
+        "max_amount":0,
+        "fee":0
       },
       {
         "name":"Ethereum",
         "symbol":"ETH",
-        "min_amount":"0.001000000000000000",
-        "max_amount":"0.000000000000000000",
-        "fee":"0.00"
+        "min_amount":0.001,
+        "max_amount":0,
+        "fee":0
+      },
+      {
+        "name":"Litecoin",
+        "symbol":"LTC",
+        "min_amount":0.01,
+        "max_amount":0,
+        "fee":0
+      },
+      {
+        "name":"Tron",
+        "symbol":"TRX",
+        "min_amount":1,
+        "max_amount":0,
+        "fee":0
+      },
+      {
+        "name":"USD Coin",
+        "symbol":"USDC",
+        "min_amount":0.1,
+        "max_amount":0,
+        "fee":0
       },
       {
         "name":"Tether",
         "symbol":"USDT",
-        "min_amount":"0.100000000000000000",
-        "max_amount":"0.000000000000000000",
-        "fee":"0.00"
+        "min_amount":0.1,
+        "max_amount":0,
+        "fee":0
       }
     ],
     "withdrawal":[
       {
         "name":"Zixi Dollar",
         "symbol":"USDZ",
-        "min_amount":"0.010000000000000000",
-        "max_amount":"0.000000000000000000",
-        "fee":"1.000000000000000000"
+        "min_amount":0.01,
+        "max_amount":0,
+        "fee":1
       },
       {
         "name":"Zixi Euro",
         "symbol":"EURZ",
-        "min_amount":"0.010000000000000000",
-        "max_amount":"0.000000000000000000",
-        "fee":"1.000000000000000000"
-      },
-      {
-        "name":"Litecoin",
-        "symbol":"LTC",
-        "min_amount":"0.001000000000000000",
-        "max_amount":"0.000000000000000000",
-        "fee":"0.001000000000000000"
+        "min_amount":0.01,
+        "max_amount":0,
+        "fee":1
       },
       {
         "name":"Bitcoin",
         "symbol":"BTC",
-        "min_amount":"0.000100000000000000",
-        "max_amount":"0.000000000000000000",
-        "fee":"0.000500000000000000"
+        "min_amount":0.0001,
+        "max_amount":0,
+        "fee":0.0005
       },
       {
         "name":"Ethereum",
         "symbol":"ETH",
-        "min_amount":"0.001000000000000000",
-        "max_amount":"0.000000000000000000",
-        "fee":"0.005000000000000000"
+        "min_amount":0.001,
+        "max_amount":0,
+        "fee":0.005
+      },
+      {
+        "name":"Litecoin",
+        "symbol":"LTC",
+        "min_amount":0.001,
+        "max_amount":0,
+        "fee":0.001
+      },
+      {
+        "name":"Tron",
+        "symbol":"TRX",
+        "min_amount":1,
+        "max_amount":0,
+        "fee":1
+      },
+      {
+        "name":"USD Coin-TRC20",
+        "symbol":"USDC",
+        "min_amount":0.01,
+        "max_amount":0,
+        "fee":1
+      },
+      {
+        "name":"USD Coin-ERC20",
+        "symbol":"USDC",
+        "min_amount":0.01,
+        "max_amount":0,
+        "fee":20
       },
       {
         "name":"Tether-TRC20",
         "symbol":"USDT",
-        "min_amount":"0.010000000000000000",
-        "max_amount":"0.000000000000000000",
-        "fee":"1.000000000000000000"
+        "min_amount":0.01,
+        "max_amount":0,
+        "fee":1
       },
       {
         "name":"Tether-ERC20",
         "symbol":"USDT",
-        "min_amount":"0.010000000000000000",
-        "max_amount":"0.000000000000000000",
-        "fee":"25.000000000000000000"
+        "min_amount":0.01,
+        "max_amount":0,
+        "fee":20
       }
     ],
     "internaltransfer":[
       {
         "name":"Zixi Dollar",
         "symbol":"USDZ",
-        "min_amount":"0.010000000000000000",
-        "max_amount":"0.000000000000000000",
-        "fee":"1.000000000000000000"
+        "min_amount":0.01,
+        "max_amount":0,
+        "fee":1
       },
       {
         "name":"Zixi Euro",
         "symbol":"EURZ",
-        "min_amount":"0.010000000000000000",
-        "max_amount":"0.000000000000000000",
-        "fee":"1.000000000000000000"
-      },
-      {
-        "name":"Litecoin",
-        "symbol":"LTC",
-        "min_amount":"0.001000000000000000",
-        "max_amount":"0.000000000000000000",
-        "fee":"0.000100000000000000"
+        "min_amount":0.01,
+        "max_amount":0,
+        "fee":1
       },
       {
         "name":"Bitcoin",
         "symbol":"BTC",
-        "min_amount":"0.000100000000000000",
-        "max_amount":"0.000000000000000000",
-        "fee":"0.000100000000000000"
+        "min_amount":0.0001,
+        "max_amount":0,
+        "fee":0.0001
       },
       {
         "name":"Ethereum",
         "symbol":"ETH",
-        "min_amount":"0.001000000000000000",
-        "max_amount":"0.000000000000000000",
-        "fee":"0.001000000000000000"
+        "min_amount":0.001,
+        "max_amount":0,
+        "fee":0.001
+      },
+      {
+        "name":"Litecoin",
+        "symbol":"LTC",
+        "min_amount":0.001,
+        "max_amount":0,
+        "fee":0.0001
+      },
+      {
+        "name":"Tron",
+        "symbol":"TRX",
+        "min_amount":1,
+        "max_amount":0,
+        "fee":1
+      },
+      {
+        "name":"USD Coin",
+        "symbol":"USDC",
+        "min_amount":0.01,
+        "max_amount":0,
+        "fee":1
       },
       {
         "name":"Tether",
         "symbol":"USDT",
-        "min_amount":"0.010000000000000000",
-        "max_amount":"0.000000000000000000",
-        "fee":"1.000000000000000000"
+        "min_amount":0.01,
+        "max_amount":0,
+        "fee":1
       }
     ],
     "exchange":[
       {
         "name":"Zixi Euro",
         "symbol":"EURZ",
-        "min_amount":"1.000000000000000000",
-        "max_amount":"0.000000000000000000",
+        "min_amount":1,
+        "max_amount":500000,
         "fee":"1.00"
-      },
-      {
-        "name":"Litecoin",
-        "symbol":"LTC",
-        "min_amount":"0.010000000000000000",
-        "max_amount":"300.000000000000000000",
-        "fee":"2.00"
       },
       {
         "name":"Bitcoin",
         "symbol":"BTC",
-        "min_amount":"0.000100000000000000",
-        "max_amount":"1.500000000000000000",
-        "fee":"2.00"
+        "min_amount":0.0001,
+        "max_amount":3,
+        "fee":"3.00"
       },
       {
         "name":"Ethereum",
         "symbol":"ETH",
-        "min_amount":"0.001000000000000000",
-        "max_amount":"20.000000000000000000",
-        "fee":"2.00"
+        "min_amount":0.001,
+        "max_amount":40,
+        "fee":"3.00"
+      },
+      {
+        "name":"Litecoin",
+        "symbol":"LTC",
+        "min_amount":0.01,
+        "max_amount":1000,
+        "fee":"3.00"
+      },
+      {
+        "name":"Tron",
+        "symbol":"TRX",
+        "min_amount":100,
+        "max_amount":500000,
+        "fee":"3.00"
+      },
+      {
+        "name":"USD Coin",
+        "symbol":"USDC",
+        "min_amount":1,
+        "max_amount":500000,
+        "fee":"1.00"
       },
       {
         "name":"Tether",
         "symbol":"USDT",
-        "min_amount":"1.000000000000000000",
-        "max_amount":"100000.000000000000000000",
+        "min_amount":1,
+        "max_amount":500000,
         "fee":"1.00"
       }
     ]
