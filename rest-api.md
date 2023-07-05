@@ -607,6 +607,7 @@ sig | string | YES |HMAC-SHA256 signature
         "details":"",                   // transaction details
         "extras":"",                    // transaction extra details
         "merchant_ref":""               // merchant API ref
+        "hash":""                       // blockchain hash of the transaction
       }
     ]
   }
