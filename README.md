@@ -2,9 +2,9 @@
 
 [ZixiPay Wallet](https://zixipay.com/) is one the most secure and easy to use transactional wallet platforms supporting Bitcoin, Ethereum, Litecoin, Tron, Tether on TRC20/ERC20 and USD Coin on TRC20/ERC20.
 
-[Bitcoin Wallet API](https://zixipay.com/), [Ethereum Wallet API](https://zixipay.com/), [Litecoin Wallet API](https://zixipay.com/), [Tether Wallet API](https://zixipay.com/), [Tron Wallet API](https://zixipay.com/), [USD Coin Wallet API](https://zixipay.com/).
+[Transactional Wallet API](https://zixipay.com/), [Bitcoin Wallet API](https://zixipay.com/), [Ethereum Wallet API](https://zixipay.com/), [Litecoin Wallet API](https://zixipay.com/), [Tether Wallet API](https://zixipay.com/), [Tron Wallet API](https://zixipay.com/), [USD Coin Wallet API](https://zixipay.com/).
 
-ZixiPay Wallet services is available on [Web](https://zixipay.com/), Mobile App ([Android](https://play.google.com/store/apps/details?id=com.zixipay.wallet) and [iOS](https://apps.apple.com/us/app/zixipay-btc-eth-ltc-usdt/id1492139262)) and via REST API.
+ZixiPay Transactional Wallet services is available on [Web](https://zixipay.com/), Mobile App ([Android](https://play.google.com/store/apps/details?id=com.zixipay.wallet) and [iOS](https://apps.apple.com/us/app/zixipay-btc-eth-ltc-usdt/id1492139262)) and via REST API.
 
 ZixiPay Wallet APIs is designed to be highly secure and easy to integrate with any kind of platforms for automatic and mass payment of the supported cryptocurrencies (BTC, ETH, LTC, TRX, USDC and USDT).
 
