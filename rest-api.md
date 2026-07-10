@@ -637,10 +637,12 @@ currency | string | YES |Any of the supported currencies (USDZ, EURZ, LTC, BTC, 
 recipient | string | YES | recipient's wallet address (for USDT/USDC withdrawals: TRC20 or ERC20 addresses are acceptable)
 feein | binary | NO | fee inclusive, deduct the fee from the withdrawal amount<br />0: (default) don't deduct the fee from the withdrawal amount<br />1: deduct the fee from the withdrawal amount
 uid | string | YES |User ID
+ref | string | NO |Idempotency reference
 ts | number | YES |Unix time
 sig | string | YES |HMAC-SHA256 signature
 
 **IMPORTANT:** If the ```feein``` parameter is set to 0 (default), a total of ```amount``` + the applicable ```fee``` would be deducted from the wallet.
+**IMPORTANT2:** ```ref``` must be unique for every transaction. System will reject duplicates.
 
 
 **Response:** (Example)
