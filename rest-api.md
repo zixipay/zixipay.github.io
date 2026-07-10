@@ -642,6 +642,7 @@ ts | number | YES |Unix time
 sig | string | YES |HMAC-SHA256 signature
 
 **IMPORTANT:** If the ```feein``` parameter is set to 0 (default), a total of ```amount``` + the applicable ```fee``` would be deducted from the wallet.
+
 **IMPORTANT2:** ```ref``` must be unique for every transaction. System will reject duplicates.
 
 
